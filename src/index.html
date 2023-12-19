@@ -14,6 +14,44 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="site-header__container">
+        <div class="site-header__branding">
+          <a href="index.html">
+            <img src="assets/images/shared/desktop/logo-dark.png" alt="" />
+            <span class="sr-only">Designo</span>
+          </a>
+        </div>
+
+        <button
+          class="site-header__menu-toggle"
+          aria-controls="site-header-nav"
+          aria-expanded="true"
+        >
+          <img
+            class="site-header__menu-icon-open"
+            src="assets/images/shared/mobile/icon-hamburger.svg"
+            alt=""
+          />
+
+          <img
+            class="site-header__menu-icon-close"
+            src="assets/images/shared/mobile/icon-close.svg"
+            alt=""
+          />
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="site-header__menu" id="site-header-nav">
+          <ul role="list" class="site-header__menu-items">
+            <li><a href="about.html">Our company</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <footer>
       <div class="attribution">
         Challenge by
