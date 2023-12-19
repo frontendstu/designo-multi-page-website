@@ -34,4 +34,17 @@
 
   // ------ Font Family
   --ff-primary: 'Jost', sans-serif;
+
+  // -------- COPY
+  --copy-fw: var(--fw-regular);
+  --copy-fs: var(--fs-200);
+  --copy-ff: var(--ff-primary);
+  --copy-font: var(--fw-regular) var(--copy-fs) var(--ff-primary);
+  --copy-leading: 1.5625rem;
+  --copy-color: hsl(var(--color-neutral-800));
+
+  @media (min-width: 48em) {
+    --copy-fs: var(--fs-300);
+    --copy-leading: 1.625rem;
+  }
 }
