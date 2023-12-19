@@ -1,0 +1,39 @@
+/* ==========================================================================
+   HIDE SM
+
+   When the .hide-md utility class is in use, it will be hidden when the
+   breakpoint is at 768px (48em). When the breakpoint hits 48em the element
+   will display.
+   ========================================================================== */
+
+@media (max-width: 47.98em) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   SHOW MD
+
+   When the .show-md utility class is in use, it will be displayed when the
+   breakpoint is at 768px (48em)
+   ========================================================================== */
+
+@media (min-width: 48em) {
+  .show-md {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   HIDE MD
+
+   When the .hide-md utility class is in use, it will be hidden when the
+   breakpoint is at 768px (48em)
+   ========================================================================== */
+
+@media (min-width: 48em) {
+  .hide-md {
+    display: none;
+  }
+}
