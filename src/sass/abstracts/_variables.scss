@@ -81,6 +81,30 @@
   --text-box-heading-color: hsl(var(--color-primary));
   --text-box-bg: hsl(var(--color-peach-200));
 
+  // ---------- COMPONENTS
+
+  // -------- BUTTONS
+  --btn-decoration: none;
+  --btn-decoration-active: none;
+  --btn-text-transform: uppercase;
+  --btn-fw: var(--fw-medium);
+  --btn-fs: var(--fs-200);
+  --btn-tracking: 0.0625rem;
+  --btn-radius: 0.5rem;
+  --btn-outline: 3px solid hsla(var(--color-primary), 0.5);
+  --btn-outline-offset: 0.125rem;
+  --btn-padding: 0.875rem 1.375rem;
+
+  --btn-light-color: hsl(var(--color-neutral-800));
+  --btn-light-color-active: hsl(var(--color-neutral-100));
+  --btn-light-bg: hsl(var(--color-neutral-100));
+  --btn-light-bg-active: hsl(var(--color-primary));
+
+  --btn-dark-color: hsl(var(--color-neutral-100));
+  --btn-dark-color-active: var(--btn-dark-color);
+  --btn-dark-bg: hsl(var(--color-primary));
+  --btn-dark-bg-active: hsl(var(--color-secondary));
+
   // ---------- LAYOUT
 
   // -------- SITE HEADER

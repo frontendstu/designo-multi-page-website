@@ -1,1 +1,44 @@
 @use '../abstracts' as abstract;
+
+/* ========================================
+ * BUTTON
+ * ======================================== */
+
+.btn {
+  @include abstract.flex();
+
+  text-decoration: var(--btn-decoration);
+  text-transform: var(--btn-text-transform);
+  font-weight: var(--btn-fw);
+  font-size: var(--btn-fs);
+  letter-spacing: var(--btn-tracking);
+  border: 0;
+  border-radius: var(--btn-radius);
+  padding: var(--btn-padding);
+  width: fit-content;
+
+  @include abstract.focus-within {
+    outline: var(--btn-outline);
+    outline-offset: var(--btn-outline-offset);
+  }
+
+  &[data-btn-style='light'] {
+    color: var(--btn-light-color);
+    background-color: var(--btn-light-bg);
+
+    @include abstract.hover-focus-within {
+      color: var(--btn-light-color-active);
+      background-color: var(--btn-light-bg-active);
+    }
+  }
+
+  &[data-btn-style='dark'] {
+    color: var(--btn-dark-color);
+    background-color: var(--btn-dark-bg);
+
+    @include abstract.hover-focus-within {
+      color: var(--btn-dark-color-active);
+      background-color: var(--btn-dark-bg-active);
+    }
+  }
+}
