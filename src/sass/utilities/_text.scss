@@ -1,0 +1,12 @@
+/* ========================================
+ * TEXT BOX
+ * ======================================== */
+
+.text-box {
+  color: var(--text-box-color);
+  background-color: var(--text-box-bg);
+
+  .heading {
+    color: var(--text-box-heading-color);
+  }
+}

@@ -73,4 +73,11 @@
   --link-border-bottom: 1px solid transparent;
   --link-border-bottom-color-active: inherit;
   --link-transition: 150ms ease-in-out all;
+
+  // ---------- UTILITIES
+
+  // -------- TEXT BOX
+  --text-box-color: var(--copy-color);
+  --text-box-heading-color: hsl(var(--color-primary));
+  --text-box-bg: hsl(var(--color-peach-200));
 }
