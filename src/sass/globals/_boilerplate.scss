@@ -39,3 +39,20 @@ h3 {
   line-height: var(--heading-h3-leading);
   letter-spacing: var(--heading-h3-tracking);
 }
+
+/* ========================================
+ * LINKS
+ * ======================================== */
+
+a {
+  text-decoration: var(--link-decoration);
+  color: var(--link-color);
+  border-bottom: var(--link-border-bottom);
+  transition: var(--link-transition);
+
+  @include abstract.hover-focus {
+    text-decoration: var(--link-decoration-active);
+    color: var(--link-color-active);
+    border-bottom-color: var(--link-border-bottom-color-active);
+  }
+}

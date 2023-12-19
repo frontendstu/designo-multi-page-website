@@ -64,4 +64,13 @@
   --heading-h3-fs: var(--fs-400);
   --heading-h3-leading: 1.625rem;
   --heading-h3-tracking: 0.3125rem;
+
+  // ---------- LINKS
+  --link-decoration: none;
+  --link-decoration-active: none;
+  --link-color: inherit;
+  --link-color-active: inherit;
+  --link-border-bottom: 1px solid transparent;
+  --link-border-bottom-color-active: inherit;
+  --link-transition: 150ms ease-in-out all;
 }
