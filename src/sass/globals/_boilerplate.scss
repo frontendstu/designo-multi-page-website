@@ -12,3 +12,30 @@ body {
   line-height: var(--copy-leading);
   color: var(--copy-color);
 }
+
+/*
+ * Heading
+ * ======================================== */
+.heading {
+  font-weight: var(--heading-fw);
+  font-family: var(--heading-ff);
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: var(--heading-h1-fs);
+  line-height: var(--heading-h1-leading);
+}
+
+h2 {
+  font-size: var(--heading-h2-fs);
+  line-height: var(--heading-h2-leading);
+  letter-spacing: var(--heading-h2-tracking);
+}
+
+h3 {
+  text-transform: var(--heading-h3-text-transform);
+  font-size: var(--heading-h3-fs);
+  line-height: var(--heading-h3-leading);
+  letter-spacing: var(--heading-h3-tracking);
+}

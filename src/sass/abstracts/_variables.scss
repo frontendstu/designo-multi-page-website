@@ -47,4 +47,21 @@
     --copy-fs: var(--fs-300);
     --copy-leading: 1.625rem;
   }
+
+  // -------- HEADING
+  --heading-fw: var(--fw-medium);
+  --heading-ff: var(--copy-ff);
+  --heading-color: inherit;
+
+  --heading-h1-fs: var(--fs-900);
+  --heading-h1-leading: 3rem;
+
+  --heading-h2-fs: var(--fs-800);
+  --heading-h2-leading: 3rem;
+  --heading-h2-tracking: 0.125rem;
+
+  --heading-h3-text-transform: uppercase;
+  --heading-h3-fs: var(--fs-400);
+  --heading-h3-leading: 1.625rem;
+  --heading-h3-tracking: 0.3125rem;
 }
