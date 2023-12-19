@@ -1,2 +1,14 @@
 :root {
+  // ---------- COLOURS
+  --color-neutral-100: 0, 0%, 100%;
+  --color-neutral-200: 210, 17%, 95%;
+  --color-neutral-800: 264, 5%, 20%;
+  --color-neutral-900: 270, 3%, 11%;
+
+  --color-peach-200: 14, 76%, 97%;
+  --color-peach-300: 11, 100%, 80%;
+  --color-peach-500: 11, 73%, 66%;
+
+  --color-primary: var(--color-peach-500);
+  --color-secondary: var(--color-neutral-200);
 }
