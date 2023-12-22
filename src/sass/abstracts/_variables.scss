@@ -105,6 +105,23 @@
   --btn-dark-bg: hsl(var(--color-primary));
   --btn-dark-bg-active: hsl(var(--color-secondary));
 
+  // -------- HERO
+  --hero-fs: var(--fs-200);
+  --hero-leading: 1.5625rem;
+  --hero-color: hsl(var(--color-neutral-100));
+  --hero-bg: hsl(var(--color-primary));
+
+  --hero-heading-fs: var(--fs-700);
+  --hero-heading-leading: 2.25rem;
+
+  @media (min-width: 48em) {
+    --hero-fs: var(--fs-300);
+    --hero-leading: 1.625rem;
+
+    --hero-heading-fs: var(--fs-900);
+    --hero-heading-leading: 3rem;
+  }
+
   // ---------- LAYOUT
 
   // -------- SITE HEADER

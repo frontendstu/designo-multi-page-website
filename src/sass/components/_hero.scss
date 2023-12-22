@@ -1,1 +1,17 @@
 @use '../abstracts' as abstract;
+
+/* ========================================
+ * NAKED HERO
+ * ======================================== */
+
+.hero {
+  font-size: var(--hero-fs);
+  line-height: var(--hero-leading);
+  color: var(--hero-color);
+  background-color: var(--hero-bg);
+
+  .heading {
+    font-size: var(--hero-heading-fs);
+    line-height: var(--hero-heading-leading);
+  }
+}
