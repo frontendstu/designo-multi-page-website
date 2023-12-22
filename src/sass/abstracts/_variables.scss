@@ -124,6 +124,17 @@
 
   // ---------- LAYOUT
 
+  // -------- WRAPPER
+  --wrapper-max-width: 20.4375rem;
+
+  @media (min-width: 48em) {
+    --wrapper-max-width: 43.0625rem;
+  }
+
+  @media (min-width: 90em) {
+    --wrapper-max-width: 69.5rem;
+  }
+
   // -------- SITE HEADER
   --site-header-bg: hsl(var(--color-neutral-100));
   --site-header-padding-block: 2.1875rem;
