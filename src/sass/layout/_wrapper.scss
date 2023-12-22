@@ -5,4 +5,11 @@
 .wrapper {
   margin-inline: auto;
   max-width: var(--wrapper-max-width);
+
+  /* 
+   * Wrapper Spacing
+   * ======================================== */
+  &__spacing {
+    margin-top: var(--wrapper-spacing-margin-top);
+  }
 }
