@@ -175,4 +175,51 @@
   @media (min-width: 90em) {
     --site-header-container-max-width: 69.4375rem;
   }
+
+  // ---------- PAGES
+
+  // -------- HOME
+
+  // ------ Hero Landing
+  --hero-landing-text-align: center;
+  --hero-landing-padding-block: 5rem 0;
+  --hero-landing-btn-outline-color: hsla(var(--color-neutral-100), 0.5);
+
+  --hero-landing-container-max-width: 20.375rem;
+
+  --hero-landing-content-gap: 1.25rem;
+  --hero-landing-content-heading-fs: var(--fs-500);
+  --hero-landing-content-heading-leading: 36px;
+  --hero-landing-content-heading-max-width: 20.0625rem;
+  --hero-landing-content-text-max-width: 20.4375rem;
+
+  --hero-landing-img-margin: 4.3125rem auto 0;
+  --hero-landing-img-height: 24rem;
+  --hero-landing-img-width: 17.75rem;
+
+  @media (min-width: 48em) {
+    --hero-landing-padding-block: 3.75rem 0;
+
+    --hero-landing-container-max-width: 29.75rem;
+
+    --hero-landing-content-heading-fs: var(--fs-900);
+    --hero-landing-content-heading-leading: 48px;
+    --hero-landing-content-heading-max-width: 29.6875rem;
+    --hero-landing-content-text-max-width: 26rem;
+  }
+
+  @media (min-width: 90em) {
+    --hero-landing-text-align: left;
+
+    --hero-landing-container-cols: repeat(2, minmax(0, 1fr));
+    --hero-landing-container-max-width: 59.5rem;
+
+    --hero-landing-content-heading-text-align: left;
+    --hero-landing-content-heading-max-width: 29.9375rem;
+    --hero-landing-content-text-text-align: left;
+
+    --hero-landing-img-margin: auto;
+    --hero-landing-img-height: 30rem;
+    --hero-landing-img-width: 17.75rem;
+  }
 }

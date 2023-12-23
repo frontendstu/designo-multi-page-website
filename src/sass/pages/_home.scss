@@ -1,1 +1,65 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * HERO LANDING
+ * ========================================= */
+
+.hero-landing {
+  text-align: var(--hero-landing-text-align);
+  padding-block: var(--hero-landing-padding-block);
+
+  .btn {
+    outline-color: var(--hero-landing-btn-outline-color);
+
+    @media (min-width: 90em) {
+      margin: unset;
+      margin-right: auto;
+    }
+  }
+
+  &__container {
+    margin-inline: auto;
+    max-width: var(--hero-landing-container-max-width);
+
+    @media (min-width: 90em) {
+      display: grid;
+      grid-template-columns: var(--hero-landing-container-cols);
+    }
+  }
+
+  &__content {
+    @include abstract.flex($direction: column);
+
+    gap: var(--hero-landing-content-gap);
+
+    .heading {
+      font-size: var(--hero-landing-content-heading-fs);
+      line-height: var(--hero-landing-content-heading-leading);
+      max-width: var(--hero-landing-content-heading-max-width);
+    }
+
+    &-text {
+      max-width: var(--hero-landing-content-text-max-width);
+
+      @media (min-width: 90em) {
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    margin: var(--hero-landing-img-margin);
+    height: var(--hero-landing-img-height);
+    width: var(--hero-landing-img-width);
+
+    img {
+      width: 100%;
+    }
+
+    @media (min-width: 90em) {
+      margin: unset;
+      margin-left: auto;
+    }
+  }
+}
