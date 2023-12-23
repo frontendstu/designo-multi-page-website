@@ -85,6 +85,6 @@
   }
 }
 
-.red {
-  background-color: red;
+body.menu-open {
+  background-color: var(--site-header-menu-open-bg);
 }

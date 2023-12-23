@@ -30,11 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
       menuToggle.setAttribute('aria-expanded', isMenuOpen);
       openIcon.style.display = isMenuOpen ? 'none' : 'block';
       closeIcon.style.display = isMenuOpen ? 'block' : 'none';
+      document.body.classList.toggle('menu-open', isMenuOpen); // Add or remove the 'menu-open' class
     } else {
       mobileMenu.style.display = 'block'; // Always show the menu for wider viewports
       menuToggle.setAttribute('aria-expanded', true);
       openIcon.style.display = 'none';
       closeIcon.style.display = 'none';
+      document.body.classList.remove('menu-open'); // Remove the class for wider viewports
     }
   }
 
