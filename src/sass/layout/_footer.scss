@@ -1,1 +1,112 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * SITE FOOTER
+ * ========================================= */
+
+.site-footer {
+  color: var(--site-footer-color);
+  background-color: var(--site-footer-bg);
+  margin-top: var(--site-footer-margin-top);
+  padding-top: var(--site-footer-padding-top);
+
+  hr {
+    border: 0;
+    border-top: var(--site-footer-hr-border-top);
+    margin-block: var(--site-footer-hr-margin-block);
+  }
+
+  &__container {
+    padding-top: var(--site-footer-container-padding-top);
+
+    &-top {
+      @media (min-width: 48em) {
+        display: grid;
+        grid-template-columns: var(--site-footer-container-top-cols);
+      }
+    }
+
+    &.wrapper {
+      margin-top: 0 !important;
+    }
+  }
+
+  &__branding {
+    img {
+      margin-inline: auto;
+      width: var(--site-footer-branding-img-width);
+
+      @media (min-width: 48em) {
+        margin-inline: 0;
+      }
+    }
+  }
+
+  &__menu {
+    @media (min-width: 48em) {
+      display: flex;
+    }
+
+    ul {
+      @include abstract.flex($direction: column);
+
+      text-transform: uppercase;
+      font-size: var(--site-footer-menu-fs);
+      letter-spacing: var(--site-footer-menu-tracking);
+      color: var(--site-footer-menu-color);
+      gap: var(--site-footer-menu-gap);
+
+      @media (min-width: 48em) {
+        margin-left: auto;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__contacts {
+    @include abstract.flex($direction: column);
+    text-align: var(--site-footer-contacts-text-align);
+    margin-top: var(--site-footer-contacts-margin-top);
+    gap: var(--site-footer-contacts-gap);
+
+    address {
+      font-size: var(--site-footer-address-fs);
+    }
+
+    span {
+      font-weight: var(--site-footer-contacts-span-fw);
+    }
+
+    @media (min-width: 48em) {
+      display: grid;
+      grid-template-columns: var(--site-footer-contacts-cols);
+    }
+  }
+
+  &__socials {
+    display: flex;
+
+    ul {
+      @include abstract.flex($direction: row);
+
+      margin-left: auto;
+      gap: var(--site-footer-socials-gap);
+    }
+
+    svg {
+      fill: var(--site-footer-socials-icon-fill);
+      transition: var(--site-footer-socials-transition);
+
+      @include abstract.hover-focus {
+        fill: var(--site-footer-socials-icon-fill-active);
+      }
+    }
+  }
+
+  &__attribution {
+    text-align: var(--site-footer-attribution-text-align);
+    font-size: var(--site-footer-attribution-fs);
+    color: var(--site-footer-attribution-color);
+    padding-block: var(--site-footer-attribution-padding-block);
+  }
+}

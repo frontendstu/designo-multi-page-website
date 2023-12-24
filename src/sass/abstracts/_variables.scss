@@ -213,6 +213,49 @@
     --site-header-container-max-width: 69.4375rem;
   }
 
+  // -------- SITE FOOTER
+  --site-footer-color: hsla(var(--color-neutral-100), 0.5);
+  --site-footer-bg: hsl(var(--color-neutral-900));
+  --site-footer-margin-top: -12rem;
+  --site-footer-padding-top: 8.5rem;
+
+  --site-footer-hr-border-top: 1px solid hsla(var(--color-neutral-100), 0.1);
+  --site-footer-hr-margin-block: 2rem;
+
+  --site-footer-container-padding-top: 7.5rem;
+
+  --site-footer-branding-img-width: 12.625rem;
+
+  --site-footer-menu-fs: 0.875rem;
+  --site-footer-menu-tracking: 2px;
+  --site-footer-menu-color: hsl(var(--color-neutral-100));
+  --site-footer-menu-gap: 1rem;
+
+  --site-footer-contacts-text-align: center;
+  --site-footer-contacts-margin-top: 2.5rem;
+  --site-footer-contacts-gap: 2.5rem;
+  --site-footer-contacts-span-fw: var(--fw-bold);
+  --site-footer-address-fs: var(--fs-200);
+
+  --site-footer-socials-icon-fill: hsl(var(--color-primary));
+  --site-footer-socials-icon-fill-active: hsl(var(--color-secondary));
+  --site-footer-socials-transition: var(--link-transition);
+  --site-footer-socials-gap: 1rem;
+
+  --site-footer-attribution-text-align: center;
+  --site-footer-attribution-fs: 0.875rem;
+  --site-footer-attribution-color: hsla(var(--color-neutral-100), 0.25);
+  --site-footer-attribution-padding-block: 2rem 3rem;
+
+  @media (min-width: 48em) {
+    --site-footer-container-top-cols: repeat(2, minmax(0, 1fr));
+    --site-footer-menu-gap: 1.3125rem;
+    --site-footer-contacts-text-align: left;
+    --site-footer-contacts-cols: repeat(3, minmax(0, 1fr));
+    --site-footer-attribution-text-align: left;
+    --site-footer-attribution-padding-block: 2rem 5rem;
+  }
+
   // ---------- PAGES
 
   // -------- HOME
