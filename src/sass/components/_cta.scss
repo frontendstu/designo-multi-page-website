@@ -1,1 +1,60 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * CALL TO ACTION
+ * ========================================= */
+
+.cta {
+  @include abstract.flex($direction: column);
+  text-align: var(--cta-text-align);
+  color: var(--cta-color);
+  background-image: var(--cta-bg-img-url);
+  background-repeat: no-repeat;
+  background-position: var(--cta-bg-img-pos);
+  background-color: var(--cta-bg-color);
+  border-radius: var(--cta-radius);
+  padding: var(--cta-padding);
+  position: relative;
+
+  .heading {
+    font-size: var(--cta-heading-fs);
+    line-height: var(--cta-heading-leading);
+    margin-inline: auto;
+    max-width: var(--cta-heading-max-width);
+
+    @media (min-width: 90em) {
+      margin-inline: 0;
+    }
+  }
+
+  &-text {
+    font-size: var(--cta-text-fs);
+    margin-top: var(--cta-text-margin-top);
+
+    @media (min-width: 90em) {
+      max-width: var(--cta-text-max-width);
+    }
+  }
+
+  &-btn {
+    margin-top: var(--cta-btn-margin-top);
+    margin-inline: auto;
+
+    @media (min-width: 90em) {
+      margin-inline: 0;
+      margin-block: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__container {
+    margin-inline: auto;
+    max-width: var(--cta-container-max-width);
+
+    @media (min-width: 90em) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: center;
+    }
+  }
+}

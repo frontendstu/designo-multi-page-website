@@ -122,6 +122,43 @@
     --hero-heading-leading: 3rem;
   }
 
+  // -------- CALL TO ACTION
+  --cta-text-align: center;
+  --cta-color: hsl(var(--color-neutral-100));
+  --cta-bg-color: hsl(var(--color-primary));
+  --cta-radius: 15px;
+  --cta-padding: 4rem 1.5rem;
+
+  --cta-heading-fs: var(--fs-500);
+  --cta-heading-leading: 36px;
+  --cta-heading-color: var(--cta-color);
+  --cta-heading-max-width: 100%;
+
+  --cta-text-fs: var(--fs-100);
+  --cta-text-margin-top: 1rem;
+
+  --cta-btn-margin-top: 2rem;
+
+  --cta-container-max-width: 17.4375rem;
+
+  @media (min-width: 48em) {
+    --cta-text-fs: var(--fs-200);
+    --cta-bg-img-pos: -3rem;
+    --cta-padding: 3.5625rem 8.125rem;
+    --cta-heading-fs: var(--fs-800);
+    --cta-heading-leading: 40px;
+    --cta-heading-max-width: 18.25rem;
+    --cta-container-max-width: 26.75rem;
+  }
+
+  @media (min-width: 90em) {
+    --cta-text-align: left;
+    --cta-bg-img-pos: right;
+    --cta-padding: 4.5rem 5.9375rem;
+    --cta-container-max-width: 57.5rem;
+    --cta-text-max-width: 27rem;
+  }
+
   // ---------- LAYOUT
 
   // -------- WRAPPER
