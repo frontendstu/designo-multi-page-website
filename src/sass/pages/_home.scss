@@ -63,3 +63,64 @@
     }
   }
 }
+
+/* =========================================
+ * FEATURES
+ * ========================================= */
+
+.features {
+  &__container {
+    @include abstract.flex($direction: column);
+    gap: var(--features-container-gap);
+
+    @media (min-width: 90em) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    @media (min-width: 48em) {
+      display: grid;
+      grid-template-columns: var(--features-item-grid-cols);
+      gap: var(--features-item-grid-gap);
+      align-items: center;
+    }
+
+    @media (min-width: 90em) {
+      display: unset;
+    }
+
+    &-img {
+      background-image: var(--features-item-img-bg-img-url);
+      background-size: var(--features-item-img-bg-img-size);
+      background-repeat: no-repeat;
+      background-position: var(--features-item-bg-img-pos);
+
+      img {
+        margin-inline: auto;
+
+        @media (min-width: 48em) {
+          margin-inline: unset;
+        }
+
+        @media (min-width: 90em) {
+          margin-inline: auto;
+        }
+      }
+    }
+
+    &-content {
+      text-align: var(--features-item-content-text-align);
+
+      p {
+        margin-top: var(--features-item-content-margin-top);
+      }
+
+      .heading {
+        text-transform: var(--features-item-heading-text-transform);
+        font-size: var(--features-item-heading-fs);
+        margin-top: var(--features-item-heading-margin-top);
+      }
+    }
+  }
+}

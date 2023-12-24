@@ -223,6 +223,35 @@
     --hero-landing-img-width: 17.75rem;
   }
 
+  // ------ Features
+  --features-container-gap: 5rem;
+
+  --features-item-img-bg-img-url: url('../assets/images/shared/desktop/bg-pattern-small-circle.svg');
+  --features-item-bg-img-size: 12.625rem;
+  --features-item-bg-img-pos: center;
+  --features-item-content-text-align: center;
+  --features-item-content-margin-top: 1rem;
+  --features-item-heading-text-transform: uppercase;
+  --features-item-heading-fs: var(--fs-400);
+  --features-item-heading-margin-top: 2rem;
+
+  @media (min-width: 48em) {
+    --features-item-container-gap: 3rem;
+
+    --features-item-bg-img-pos: left;
+    --features-item-grid-cols: 12.625rem 27.4375rem;
+    --features-item-grid-gap: 3rem;
+    --features-item-content-text-align: left;
+    --features-item-heading-margin-top: 0;
+  }
+
+  @media (min-width: 90em) {
+    --features-item-bg-img-pos: center;
+    --features-item-content-text-align: center;
+    --features-item-img-bg-img-pos: center;
+    --features-item-heading-margin-top: 2rem;
+  }
+
   // -------- PROJECTS
 
   // ------ Project Category
