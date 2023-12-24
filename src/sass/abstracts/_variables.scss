@@ -222,4 +222,29 @@
     --hero-landing-img-height: 30rem;
     --hero-landing-img-width: 17.75rem;
   }
+
+  // -------- PROJECTS
+
+  // ------ Project Category
+  --project-cat-text-transform: uppercase;
+  --project-cat-color: hsl(var(--color-neutral-100));
+  --project-cat-heading-fs: var(--fs-400);
+  --project-cat-heading-tracking: 0.0875rem;
+  --project-cat-link-fs: var(--fs-100);
+  --project-cat-link-tracking: 5px;
+  --project-cat-link-icon-url: url('../assets/images/shared/desktop/icon-right-arrow.svg');
+  --project-cat-link-margin-top: 0.75rem;
+  --project-cat-link-icon-margin-left: 1rem;
+
+  --project-cat-container-gap: 1.5rem;
+
+  --project-cat-item-radius: 15px;
+  --project-cat-item-overlay-bg: hsla(var(--color-neutral-900), 0.75);
+  --project-cat-item-overlay-bg-active: hsla(var(--color-primary), 0.75);
+  --project-cat-item-transition: var(--link-transition);
+
+  @media (min-width: 48em) {
+    --project-cat-heading-fs: var(--fs-800);
+    --project-cat-link-margin-top: 1.25rem;
+  }
 }

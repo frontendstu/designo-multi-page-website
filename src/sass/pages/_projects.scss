@@ -1,1 +1,83 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * PROJECT CATEGORY
+ * ========================================= */
+
+.project-cat {
+  text-transform: var(--project-cat-text-transform);
+  color: var(--project-cat-color);
+
+  .heading {
+    font-size: var(--project-cat-heading-fs);
+    letter-spacing: var(--project-cat-heading-tracking);
+  }
+
+  a {
+    font-size: var(--project-cat-link-fs);
+    letter-spacing: var(--project-cat-link-tracking);
+    margin-top: var(--project-cat-link-margin-top);
+
+    &::after {
+      content: var(--project-cat-link-icon-url);
+      margin-left: var(--project-cat-link-icon-margin-left);
+    }
+  }
+
+  &__item {
+    border-radius: var(--project-cat-item-radius);
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width: 90em) {
+      &-home {
+        &[data-grid='large'] {
+          grid-area: large;
+        }
+
+        &[data-grid='small'] {
+          grid-column: 2;
+          align-self: start;
+        }
+      }
+    }
+
+    &-img img {
+      @include abstract.size(100%, 100%);
+    }
+
+    &-overlay {
+      @include abstract.flex($direction: column);
+      @include abstract.size(100%, 100%);
+
+      background-color: var(--project-cat-item-overlay-bg);
+      transition: var(--project-cat-item-transition);
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include abstract.hover-focus {
+        background-color: var(--project-cat-item-overlay-bg-active);
+      }
+    }
+  }
+
+  /*
+   * Project Category: Home
+   * ========================================= */
+  &-home {
+    &__container {
+      @include abstract.flex($direction: column);
+
+      gap: var(--project-cat-container-gap);
+
+      @media (min-width: 90em) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+          'large small'
+          'large small';
+      }
+    }
+  }
+}
