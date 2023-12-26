@@ -14,7 +14,7 @@
   max-width: var(--hero-max-width);
 
   .heading {
-    font-size: var(--hero-heading-fs);
+    font-size: var(--hero-heading-fs) !important;
     line-height: var(--hero-heading-leading);
   }
 }
