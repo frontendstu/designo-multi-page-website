@@ -116,6 +116,16 @@
   --hero-heading-fs: var(--fs-700);
   --hero-heading-leading: 2.25rem;
 
+  --hero-basic-text-align: center;
+  --hero-basic-padding-block: 6.5625rem;
+  --hero-basic-container-max-width: 20.4375rem;
+  --hero-basic-content-gap: 1.5rem;
+
+  @media (min-width: 48em) {
+    --hero-basic-padding-block: 4rem;
+    --hero-basic-container-max-width: 24.25rem;
+  }
+
   @media (min-width: 48em) {
     --hero-fs: var(--fs-300);
     --hero-leading: 1.625rem;

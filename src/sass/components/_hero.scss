@@ -18,3 +18,23 @@
     line-height: var(--hero-heading-leading);
   }
 }
+
+/* ========================================
+ * BASIC HERO
+ * ======================================== */
+
+.hero-basic {
+  text-align: var(--hero-basic-text-align);
+  padding-block: var(--hero-basic-padding-block);
+
+  &__container {
+    margin-inline: auto;
+    max-width: var(--hero-basic-container-max-width);
+  }
+
+  &__content {
+    @include abstract.flex;
+
+    gap: var(--hero-basic-content-gap);
+  }
+}
