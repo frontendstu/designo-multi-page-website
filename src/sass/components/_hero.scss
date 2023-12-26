@@ -9,6 +9,9 @@
   line-height: var(--hero-leading);
   color: var(--hero-color);
   background-color: var(--hero-bg);
+  border-radius: var(--hero-radius);
+  margin-inline: auto;
+  max-width: var(--hero-max-width);
 
   .heading {
     font-size: var(--hero-heading-fs);

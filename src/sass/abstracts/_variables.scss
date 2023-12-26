@@ -110,6 +110,8 @@
   --hero-leading: 1.5625rem;
   --hero-color: hsl(var(--color-neutral-100));
   --hero-bg: hsl(var(--color-primary));
+  --hero-radius: 0;
+  --hero-max-width: 100%;
 
   --hero-heading-fs: var(--fs-700);
   --hero-heading-leading: 2.25rem;
@@ -117,9 +119,15 @@
   @media (min-width: 48em) {
     --hero-fs: var(--fs-300);
     --hero-leading: 1.625rem;
+    --hero-radius: 0.9375rem;
+    --hero-max-width: 43.0625rem;
 
     --hero-heading-fs: var(--fs-900);
     --hero-heading-leading: 3rem;
+  }
+
+  @media (min-width: 90em) {
+    --hero-max-width: 69.4375rem;
   }
 
   // -------- CALL TO ACTION
