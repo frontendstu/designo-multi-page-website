@@ -374,4 +374,27 @@
     --project-cat-heading-fs: var(--fs-800);
     --project-cat-link-margin-top: 1.25rem;
   }
+
+  // ------ Project Grid
+  --project-grid-gap: 2.5rem;
+
+  --project-grid-item-color-active: hsl(var(--color-neutral-100));
+  --project-grid-item-bg: hsl(var(--color-peach-200));
+  --project-grid-item-bg-active: hsl(var(--color-primary));
+  --project-grid-item-radius: 0.9375rem;
+  --project-grid-item-transition: var(--link-transition);
+  --project-grid-item-heading-color: hsl(var(--color-primary));
+  --project-grid-item-heading-color-active: hsl(var(--color-neutral-100));
+  --project-grid-item-text-text-align: center;
+  --project-grid-item-text-margin-top: 1rem;
+  --project-grid-item-text-padding: 2rem 1.875rem;
+  --project-grid-item-width: 100%;
+
+  @media (min-width: 48em) {
+    --project-grid-item-width: 53%;
+  }
+
+  @media (min-width: 90em) {
+    --project-grid-item-width: 100%;
+  }
 }

@@ -81,3 +81,58 @@
     }
   }
 }
+
+/* =========================================
+ * PROJECT GRID
+ * ========================================= */
+
+.project-grid {
+  @include abstract.flex();
+
+  gap: var(--project-grid-gap);
+
+  &__item {
+    background-color: var(--project-grid-item-bg);
+    border-radius: var(--project-grid-item-radius);
+    overflow: hidden;
+    transition: var(--project-grid-item-transition);
+
+    .heading {
+      color: var(--project-grid-item-heading-color);
+    }
+
+    &-text {
+      text-align: var(--project-grid-item-text-text-align);
+      padding: var(--project-grid-item-text-padding);
+
+      p {
+        margin-top: var(--project-grid-item-text-margin-top);
+      }
+    }
+
+    img {
+      width: var(--project-grid-item-width);
+    }
+
+    @include abstract.hover {
+      background-color: var(--project-grid-item-bg-active);
+      color: var(--project-grid-item-color-active);
+
+      .heading {
+        color: var(--project-grid-item-heading-color-active);
+      }
+    }
+
+    @media (min-width: 48em) {
+      @include abstract.flex($direction: row);
+    }
+
+    @media (min-width: 90em) {
+      display: unset;
+    }
+  }
+
+  @media (min-width: 90em) {
+    @include abstract.grid($columns: 3);
+  }
+}
