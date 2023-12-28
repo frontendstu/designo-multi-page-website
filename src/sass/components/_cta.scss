@@ -40,6 +40,10 @@
     margin-top: var(--cta-btn-margin-top);
     margin-inline: auto;
 
+    @include abstract.focus-within {
+      outline-color: var(--cta-btn-outline-color);
+    }
+
     @media (min-width: 90em) {
       margin-inline: 0;
       margin-block: auto;
