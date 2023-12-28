@@ -39,3 +39,42 @@
     gap: var(--hero-basic-content-gap);
   }
 }
+
+/* ========================================
+ * IMAGE HERO
+ * ======================================== */
+
+.hero-img {
+  @include abstract.flex($direction: column-reverse);
+
+  overflow: hidden;
+
+  @media (min-width: 90em) {
+    &[data-hero-img-pos='left'] {
+      flex-direction: row-reverse;
+    }
+
+    &[data-hero-img-pos='right'] {
+      flex-direction: row;
+    }
+  }
+
+  &__container {
+    margin-inline: auto;
+    max-width: var(--hero-img-container-max-width);
+  }
+
+  &__content {
+    text-align: var(--hero-img-content-text-text-align);
+    padding-block: var(--hero-img-content-padding-block);
+
+    .heading {
+      font-size: var(--hero-img-content-heading-fs);
+    }
+
+    &-text {
+      margin-top: var(--hero-img-content-text-margin-top);
+      max-width: var(--hero-img-content-text-max-width);
+    }
+  }
+}

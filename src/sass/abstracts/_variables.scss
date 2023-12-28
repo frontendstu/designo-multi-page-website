@@ -140,6 +140,27 @@
     --hero-max-width: 69.4375rem;
   }
 
+  // ------ Hero Image
+  --hero-img-container-max-width: 20.4375rem;
+
+  --hero-img-content-padding-block: 5rem;
+  --hero-img-content-heading-fs: var(--fs-500);
+  --hero-img-content-text-text-align: center;
+  --hero-img-content-text-margin-top: 1.5rem;
+  --hero-img-content-text-max-width: 100%;
+
+  @media (min-width: 48em) {
+    --hero-img-container-max-width: 35.8125rem;
+    --hero-img-content-padding-block: 4rem;
+    --hero-img-content-heading-fs: var(--fs-900);
+  }
+
+  @media (min-width: 90em) {
+    --hero-img-container-max-width: 33.75rem;
+    --hero-img-content-text-text-align: left;
+    --hero-img-content-text-max-width: 28.625rem;
+  }
+
   // -------- CALL TO ACTION
   --cta-text-align: center;
   --cta-color: hsl(var(--color-neutral-100));
