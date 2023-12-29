@@ -13,3 +13,24 @@
     margin-top: var(--wrapper-spacing-margin-top);
   }
 }
+
+/* ========================================
+ * RESPONSIVE WRAPPER
+ * ======================================== */
+
+.wrapper-md {
+  margin-inline: auto;
+  max-width: 100%;
+
+  @media (min-width: 48em) {
+    max-width: var(--wrapper-max-width);
+  }
+}
+
+.wrapper__spacing-md {
+  margin-top: 0;
+
+  @media (min-width: 48em) {
+    margin-top: var(--wrapper-spacing-margin-top);
+  }
+}
