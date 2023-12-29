@@ -419,4 +419,23 @@
   @media (min-width: 90em) {
     --project-grid-item-width: 100%;
   }
+
+  // -------- ABOUT
+
+  // ------ About Card
+  --about-card-text-align: center;
+  --about-card-padding: 5rem 1.5rem;
+  --about-card-gap: 1.5rem;
+  --about-card-heading-fs: var(--fs-700);
+
+  @media (min-width: 48em) {
+    --about-card-radius: 0.9375rem;
+    --about-card-heading-fs: var(--fs-800);
+    --about-card-content-max-width: 39.75rem;
+  }
+
+  @media (min-width: 90em) {
+    --about-card-text-align: left;
+    --about-card-content-padding-inline: 5.875rem;
+  }
 }

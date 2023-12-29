@@ -1,1 +1,41 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * ABOUT CARD
+ * ========================================= */
+
+.about-card {
+  @media (min-width: 48em) {
+    border-radius: var(--about-card-radius);
+    overflow: hidden;
+  }
+
+  @media (min-width: 90em) {
+    @include abstract.flex($direction: row);
+  }
+
+  &__content {
+    @include abstract.flex;
+
+    text-align: var(--about-card-text-align);
+    padding: var(--about-card-padding);
+    gap: var(--about-card-gap);
+
+    .heading {
+      font-size: var(--about-card-heading-fs);
+    }
+
+    @media (min-width: 48em) {
+      margin-inline: auto;
+      max-width: var(--about-card-content-max-width);
+    }
+
+    @media (min-width: 90em) {
+      padding-inline: var(--about-card-content-padding-inline);
+
+      .heading {
+        margin-right: auto;
+      }
+    }
+  }
+}
