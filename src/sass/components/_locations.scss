@@ -1,1 +1,40 @@
 @use '../abstracts' as abstract;
+
+/* =========================================
+ * LOCATIONS
+ * ========================================= */
+
+.locations {
+  @include abstract.flex;
+
+  text-align: var(--locations-text-align);
+
+  @media (min-width: 90em) {
+    display: unset;
+  }
+
+  &-container {
+    @include abstract.flex;
+    gap: var(--locations-container-gap);
+
+    @media (min-width: 90em) {
+      @include abstract.grid($columns: 3);
+    }
+  }
+
+  &__item {
+    img {
+      background-image: var(--locations-icon-bg-img-url);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-inline: auto;
+    }
+
+    &-content {
+      @include abstract.flex;
+
+      margin-top: var(--locations-content-margin-top);
+      gap: var(--locations-content-gap);
+    }
+  }
+}
