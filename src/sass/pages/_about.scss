@@ -12,6 +12,14 @@
 
   @media (min-width: 90em) {
     @include abstract.flex($direction: row);
+
+    &[data-about-img-pos='left'] {
+      flex-direction: row;
+    }
+
+    &[data-about-img-pos='right'] {
+      flex-direction: row-reverse;
+    }
   }
 
   &__content {
