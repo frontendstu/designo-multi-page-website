@@ -1,13 +1,13 @@
 {
-    "name": "project-name",
-    "version": "0.1.0",
-    "description": "Project description",
+    "name": "designo-multi-page-website",
+    "version": "1.0.0",
+    "description": "My solution to the Frontend Mentor 'Designo Multi-Page Website' challenge",
     "main": "public/index.html",
     "author": "Frontend Stu",
-    "license": "",
+    "license": "GPL-2.0-only",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/frontendstu/designo-multi-page-website"
     },
     "scripts": {
         "build:sass": "sass  --no-source-map src/sass:public/css",
