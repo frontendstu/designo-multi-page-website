@@ -69,6 +69,11 @@
     --btn-case: uppercase;
     --btn-tracking: 1px;
 
+    --btn-on-dark-bg: hsl(var(--clr-neutral-100));
+    --btn-on-dark-bg-active: hsl(var(--clr-secondary));
+    --btn-on-dark-clr: hsl(var(--clr-neutral-800));
+    --btn-on-dark-clr-active: hsl(var(--clr-neutral-100));
+
     // ---------- LAYOUT
 
     // ----- Header
