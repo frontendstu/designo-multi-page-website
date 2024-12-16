@@ -17,6 +17,10 @@
     letter-spacing: var(--btn-tracking);
     text-transform: var(--btn-case);
 
+    @include mixin.focus-within {
+        border-radius: var(--btn-radius);
+    }
+
     /* Button: On Dark                 */
     /* ------------------------------- */
     &[data-btn-style='on-dark'] {
