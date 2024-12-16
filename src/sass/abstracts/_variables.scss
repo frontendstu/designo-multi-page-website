@@ -63,6 +63,8 @@
     // ----- Buttons
     --btn-padding: 1.375rem 1.5rem;
     --btn-radius: 8px;
+    --btn-transition: 150ms ease-in-out background-color,
+        150ms ease-in-out color;
     --btn-border: transparent;
     --btn-fw: var(--fw-medium);
     --btn-fs: var(--fs-150);
