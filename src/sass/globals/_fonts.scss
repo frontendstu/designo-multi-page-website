@@ -1,1 +1,11 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Jost                            */
+/* ------------------------------- */
+
+@include mixin.font-face(
+    $font-family: 'Jost',
+    $font-path: '../assets/fonts/Jost/Jost-VariableFont_wght.ttf',
+    $font-weight: 400 700
+);
