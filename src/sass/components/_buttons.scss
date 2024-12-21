@@ -35,4 +35,16 @@
             color: var(--btn-on-dark-clr-active);
         }
     }
+
+    /* Button: On Light                */
+    /* ------------------------------- */
+    &[data-btn-style='on-light'] {
+        background-color: var(--btn-on-light-bg);
+        color: var(--btn-on-light-clr);
+
+        @include mixin.hover-focus-within {
+            background-color: var(--btn-on-light-bg-active);
+            color: var(--btn-on-light-clr-active);
+        }
+    }
 }
