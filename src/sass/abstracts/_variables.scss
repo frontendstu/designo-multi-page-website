@@ -32,9 +32,9 @@
     --body-bg: transparent;
 
     // ----- Copy
-    --copy-clr: inherit;
-    --copy-font: inherit;
-    --copy-leading: inherit;
+    --copy-clr: hsl(var(--clr-neutral-800));
+    --copy-font: var(--fw-regular) var(--fs-200) var(--ff-jost);
+    --copy-leading: 1.5625rem;
 
     // ----- Links
     --link-transition: inherit;
