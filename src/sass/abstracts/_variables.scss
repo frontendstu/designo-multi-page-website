@@ -62,9 +62,13 @@
     // ---------- COMPONENTS
 
     // ----- Buttons
-    --btn-padding: 0.5rem 1rem;
-    --btn-radius: 5px;
-    --btn-border: 1px solid black;
+    --btn-padding: 0.875rem 1rem;
+    --btn-radius: 8px;
+    --btn-border: 1px solid transparent;
+    --btn-fw: var(--fw-medium);
+    --btn-fs: var(--fs-200);
+    --btn-tracking: 1px;
+    --btn-case: uppercase;
 
     // ---------- LAYOUT
 

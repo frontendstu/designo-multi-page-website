@@ -11,6 +11,10 @@
     padding: var(--btn-padding);
     border-radius: var(--btn-radius);
     border: var(--btn-border);
+    font-weight: var(--btn-fw);
+    font-size: var(--btn-fs);
+    letter-spacing: var(--btn-tracking);
+    text-transform: var(--btn-case);
 
     @include mixin.hover-focus-within {
         text-decoration: none;
