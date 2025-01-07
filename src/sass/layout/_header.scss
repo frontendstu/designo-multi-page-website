@@ -47,6 +47,13 @@
             }
         }
     }
+
+    &__menu {
+        font-weight: var(--header-menu-fw);
+        font-size: var(--header-menu-fs);
+        letter-spacing: var(--header-menu-tracking);
+        text-transform: var(--header-menu-case);
+    }
 }
 
 @media (max-width: 47.98em) {
@@ -60,8 +67,9 @@
 
             display: none;
             width: 100%;
-            padding: 2rem;
-            background-color: rgba(0, 0, 0, 0.25);
+            padding: var(--header-menu-padding);
+            background-color: var(--header-menu-bg);
+            color: var(--header-menu-clr);
 
             &-items {
                 @include mixin.flex(
