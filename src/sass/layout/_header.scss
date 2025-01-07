@@ -12,11 +12,16 @@
         justify-content: space-between;
     }
 
-    /*
     &__branding {
-        // Add header branding styles here
+        @include mixin.size($width: var(--header-branding-width));
+
+        transition: var(--header-branding-transition);
+        opacity: var(--header-branding-opacity);
+
+        @include mixin.hover-focus-within {
+            opacity: var(--header-branding-opacity-active);
+        }
     }
-    */
 
     &__toggle {
         display: none;
