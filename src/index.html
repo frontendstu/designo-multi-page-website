@@ -14,6 +14,53 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__branding">
+                        <a href="#">
+                            <img
+                                src="assets/images/shared/desktop/logo-dark.png"
+                                alt=""
+                                aria-hidden="true"
+                            />
+
+                            <h1 class="sr-only">Designo</h1>
+                        </a>
+                    </div>
+
+                    <button
+                        class="header__toggle"
+                        aria-controls="header-nav"
+                        aria-expanded="false"
+                    >
+                        <img
+                            src="assets/images/shared/mobile/icon-hamburger.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="menu-open-icon"
+                        />
+
+                        <img
+                            src="assets/images/shared/mobile/icon-close.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="menu-close-icon"
+                        />
+                        <span class="sr-only">Menu</span>
+                    </button>
+
+                    <nav class="header__menu" id="header-nav">
+                        <ul role="list" class="header__menu-items">
+                            <li><a href="about.html">Our company</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
         <script src="js/scripts.js"></script>
     </body>
 </html>
