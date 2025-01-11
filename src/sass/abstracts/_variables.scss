@@ -85,6 +85,12 @@
     --btn-on-light-bg-active: hsl(var(--clr-secondary));
     --btn-on-light-clr: hsl(var(--clr-neutral-100));
 
+    // ----- Hero
+    --hero-max-width: 100%;
+    --hero-radius: 0;
+    --hero-bg: hsl(var(--clr-primary));
+    --hero-clr: hsl(var(--clr-neutral-100));
+
     // ---------- LAYOUT
 
     // ----- Header
@@ -112,6 +118,9 @@
     @media (min-width: 48em) {
         --container-max-width: 43rem;
 
+        --hero-max-width: 43.0625rem;
+        --hero-radius: 15px;
+
         --header-padding-block: 2rem;
         --header-menu-fs: var(--fs-100);
         --header-menu-items-gap: 2.625rem;
@@ -121,5 +130,7 @@
     @media (min-width: 90em) {
         --container-max-width: 69.375rem;
         --container-padding-inline: 0.5rem;
+
+        --hero-max-width: 69.4375rem;
     }
 }
