@@ -1,1 +1,54 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Home Hero                       */
+/* ------------------------------- */
+
+.home-hero {
+    @include mixin.flex;
+
+    padding-top: var(--home-hero-padding-top);
+
+    &__content,
+    &__content-block {
+        @include mixin.flex($gap: var(--home-hero-content-gap));
+    }
+
+    &__content {
+        text-align: var(--home-hero-content-text-align);
+
+        &-block {
+            max-width: var(--home-hero-content-block-max-width);
+            margin-inline: auto;
+        }
+
+        .heading {
+            max-width: var(--home-hero-heading-max-width);
+            margin-inline: auto;
+            font-weight: var(--home-hero-heading-fw);
+            font-size: var(--home-hero-heading-fs);
+            line-height: var(--home-hero-heading-leading);
+        }
+
+        .btn {
+            margin-inline: auto;
+        }
+    }
+
+    &__img {
+        @include mixin.size(
+            $width: var(--home-hero-img-width),
+            $height: var(--home-hero-img-height)
+        );
+
+        overflow: hidden;
+
+        img {
+            @include mixin.size;
+
+            margin-top: var(--home-hero-img-margin-top);
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
