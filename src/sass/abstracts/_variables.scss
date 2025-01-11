@@ -112,6 +112,26 @@
 
     --header-menu-items-gap: 2rem;
 
+    // ---------- PAGES
+
+    // -------- Home
+
+    // ----- Home Hero
+    --home-hero-padding-top: 5rem;
+
+    --home-hero-content-gap: 1.5rem;
+    --home-hero-content-text-align: center;
+    --home-hero-content-block-max-width: 20.375rem;
+
+    --home-hero-heading-max-width: 22.375rem;
+    --home-hero-heading-fw: var(--fw-medium);
+    --home-hero-heading-fs: var(--fs-700);
+    --home-hero-heading-leading: 2.25rem;
+
+    --home-hero-img-width: 17.75rem;
+    --home-hero-img-height: 27.375rem;
+    --home-hero-img-margin-top: 5rem;
+
     // ---------- MEDIA QUERIES
 
     // ----- 768px
