@@ -1,1 +1,13 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Hero                            */
+/* ------------------------------- */
+
+.hero {
+    max-width: var(--hero-max-width);
+    margin-inline: auto;
+    border-radius: var(--hero-radius);
+    background-color: var(--hero-bg);
+    color: var(--hero-clr);
+}
