@@ -1,0 +1,87 @@
+@use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Header                          */
+/* ------------------------------- */
+
+.header {
+    padding-block: var(--header-padding-block);
+
+    &__wrapper {
+        @include mixin.flex($direction: row);
+        justify-content: space-between;
+    }
+
+    /*
+    &__branding {
+        // Add header branding styles here
+    }
+    */
+
+    &__toggle {
+        display: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        .menu-open-icon {
+            display: block;
+        }
+
+        .menu-close-icon {
+            display: none;
+        }
+
+        &[aria-expanded='true'] {
+            .menu-open-icon {
+                display: none;
+            }
+
+            .menu-close-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 47.98em) {
+    .header {
+        &__toggle {
+            display: block;
+        }
+
+        &__menu {
+            @include mixin.pos-absolute($right: 0, $left: 0);
+
+            display: none;
+            width: 100%;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.25);
+
+            &-items {
+                @include mixin.flex(
+                    $align: flex-start,
+                    $gap: var(--header-menu-items-gap)
+                );
+            }
+
+            &[data-visible] {
+                @include mixin.flex($align: flex-start);
+                top: var(--header-menu-pos-top);
+            }
+        }
+    }
+}
+
+@media (min-width: 48em) {
+    .header {
+        &__menu {
+            &-items {
+                @include mixin.flex(
+                    $direction: row,
+                    $gap: var(--header-menu-items-gap)
+                );
+            }
+        }
+    }
+}
