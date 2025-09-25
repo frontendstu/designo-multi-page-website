@@ -4,3 +4,20 @@
 // The mixins partial contains the project Sass mixins to promote consistency
 // of styles and reduce the need to repeat long styles.
 // =============================================================================
+
+// -----------------------------------------------------------------------------
+// FONT FACE
+//
+// Generates a `@font-face` rule for importing custom fonts. The font-face
+// mixin simplifies font registration.
+// -----------------------------------------------------------------------------
+
+@mixin font-face($url, $family, $weight, $style: normal) {
+    @font-face {
+        src: url($url);
+        font-weight: $weight;
+        font-family: $family;
+        font-style: $style;
+        font-display: swap;
+    }
+}
