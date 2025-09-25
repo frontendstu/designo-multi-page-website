@@ -68,3 +68,20 @@
         @content;
     }
 }
+
+// -----------------------------------------------------------------------------
+// FLEXBOX
+//
+// The flexbox mixin provides a shorthand utility for applying common Flexbox
+// layout properties in a consistent and readable manner. It simplifies the
+// declaration of `display: flex;` along with optional arguments and direction
+// settings.
+// -----------------------------------------------------------------------------
+
+@mixin flex($align: center, $justify: center, $direction: column, $gap: null) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+}
