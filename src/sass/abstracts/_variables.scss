@@ -3,5 +3,12 @@
  * ========================================================================== */
 
 :root {
-    /* Add custom props... */
+    /* ----- COLOURS */
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(210, 17%, 95%);
+    --clr-neutral-800: hsl(264, 5%, 20%);
+    --clr-neutral-900: hsl(270, 3%, 11%);
+
+    --clr-peach: hsl(11, 73%, 66%);
+    --clr-light-peach: hsl(11, 73%, 66%);
 }
