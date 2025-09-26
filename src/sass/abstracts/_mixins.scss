@@ -83,5 +83,8 @@
     align-items: $align;
     justify-content: $justify;
     flex-direction: $direction;
-    gap: $gap;
+
+    @if $gap != null {
+        gap: $gap;
+    }
 }
