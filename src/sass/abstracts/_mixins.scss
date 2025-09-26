@@ -88,3 +88,42 @@
         gap: $gap;
     }
 }
+
+// -----------------------------------------------------------------------------
+// SIZE
+//
+// The size mixin provides a shorthand for declaring common sizing properties.
+// -----------------------------------------------------------------------------
+
+@mixin size(
+    $width: null,
+    $height: null,
+    $max-width: null,
+    $max-height: null,
+    $min-width: null,
+    $min-height: null
+) {
+    @if $width != null {
+        width: $width;
+    }
+
+    @if $height != null {
+        height: $height;
+    }
+
+    @if $max-width != null {
+        max-width: $max-width;
+    }
+
+    @if $max-height != null {
+        max-height: $max-height;
+    }
+
+    @if $min-width != null {
+        min-width: $min-width;
+    }
+
+    @if $min-height != null {
+        min-height: $min-height;
+    }
+}
