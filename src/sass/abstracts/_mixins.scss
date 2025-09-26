@@ -127,3 +127,36 @@
         min-height: $min-height;
     }
 }
+
+// -----------------------------------------------------------------------------
+// POSITION
+//
+// A position shorthadn utility for declaring layout positioning.
+// -----------------------------------------------------------------------------
+
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+    // Define the valid position types
+    $valid-types: static, relative, absolute, fixed, sticky;
+
+    @if index($valid-types, $type) {
+        position: $type;
+
+        @if $top != null {
+            top: $top;
+        }
+
+        @if $right != null {
+            right: $right;
+        }
+
+        @if $bottom != null {
+            bottom: $bottom;
+        }
+
+        @if $left != null {
+            left: $left;
+        }
+    } @else {
+        @error "⛔ Invalid position type: #{$type}. Type must be one of: #{$valid-types}.";
+    }
+}
