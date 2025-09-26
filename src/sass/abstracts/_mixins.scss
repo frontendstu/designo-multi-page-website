@@ -160,3 +160,95 @@
         @error "⛔ Invalid position type: #{$type}. Type must be one of: #{$valid-types}.";
     }
 }
+
+// -----------------------------------------------------------------------------
+// BUTTONS
+//
+// A button shorthand utility mixin that is used to easily create button and
+// button types.
+// -----------------------------------------------------------------------------
+
+@mixin btn(
+    $width: null,
+    $padding: null,
+    $radius: null,
+    $transition: null,
+    $border-color: null,
+    $border-color-hover: null,
+    $bg: null,
+    $bg-hover: null,
+    $color: null,
+    $color-hover: null,
+    $outline-clr: null,
+    $font: null,
+    $case: null,
+    $tracking: null,
+    $decoration: null,
+    $decoration-hover: null
+) {
+    @if $width != null {
+        width: $width;
+    }
+
+    @if $padding != null {
+        padding: $padding;
+    }
+
+    @if $radius != null {
+        border-radius: $radius;
+    }
+
+    @if $transition != null {
+        transition: $transition;
+    }
+
+    border: 1px solid transparent;
+
+    @if $border-color != null {
+        border-color: $border-color;
+    }
+
+    @if $bg != null {
+        background-color: $bg;
+    }
+
+    @if $color != null {
+        color: $color;
+    }
+
+    @if $font != null {
+        font: $font;
+    }
+
+    @if $case != null {
+        text-transform: $case;
+    }
+
+    @if $tracking != null {
+        letter-spacing: $tracking;
+    }
+
+    @if $decoration != null {
+        text-decoration: $decoration;
+    }
+
+    @include mixin.hover-focus {
+        @if $border-color-hover {
+            border-color: $border-color-hover;
+        }
+
+        @if $bg-hover != null {
+            background-color: $bg-hover;
+        }
+
+        @if $color-hover != null {
+            color: $color-hover;
+        }
+    }
+
+    @if $outline-clr != null {
+        @include mixin.focus-all {
+            outline: $outline-clr;
+        }
+    }
+}
