@@ -3,7 +3,8 @@
  * ========================================================================== */
 
 :root {
-    /* ----- COLOURS */
+    /* COLOURS
+     * ---------------------------------------------------------------------- */
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-neutral-200: hsl(210, 17%, 95%);
     --clr-neutral-800: hsl(264, 5%, 20%);
@@ -12,15 +13,16 @@
     --clr-peach: hsl(11, 73%, 66%);
     --clr-light-peach: hsl(11, 73%, 66%);
 
-    /* ----- Fonts */
+    /* FONTS
+     * ---------------------------------------------------------------------- */
 
-    /* Font Weight */
+    /* ----- Font Weight */
     --fw-reg: 400;
     --fw-med: 500;
     --fw-semibold: 600;
     --fw-bold: 700;
 
-    /* Font Size */
+    /* ----- Font Size */
     --fs-100: 0.875rem; // 14px
     --fs-200: 0.9375rem; // 15px
     --fs-300: 1rem; // 16px
@@ -31,12 +33,13 @@
     --fs-800: 2.5rem; // 40px
     --fs-900: 3rem; // 48px
 
-    /* Font Family */
+    /* ----- Font Family */
     --ff-sans: 'Jost', sans-serif;
 
-    /* ----- Typography */
+    /* TYPOGRAPHY
+     * ---------------------------------------------------------------------- */
 
-    /* Base */
+    /* ----- Base */
     --base-clr: var(--clr-neutral-800);
     --base-fw: var(--fw-reg);
     --base-fs: var(--fs-300);
@@ -44,7 +47,7 @@
     --base-font: var(--base-fw) var(--base-fs) var(--base-ff);
     --base-leading: 26px;
 
-    /* Headings */
+    /* ----- Headings */
     --heading-clr: inherit;
     --heading-fw: var(--fw-med);
     --heading-ff: var(--base-ff);
