@@ -26,3 +26,23 @@ body {
     font-weight: var(--heading-fw);
     font-family: var(--heading-ff);
 }
+
+/**
+ * LINKS
+ * -------------------------------------------------------------------------- */
+
+a {
+    transition: var(--link-transition);
+    color: var(--link-clr);
+    text-decoration: var(--link-decoration);
+
+    @include mixin.hover {
+        color: var(--link-clr-hover);
+    }
+
+    @include mixin.focus-all {
+        border-radius: var(--link-radius);
+        outline: var(--link-outline);
+        outline-offset: var(--link-outline-offset);
+    }
+}
