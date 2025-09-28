@@ -43,4 +43,9 @@
     --base-ff: var(--ff-sans);
     --base-font: var(--base-fw) var(--base-fs) var(--base-ff);
     --base-leading: 26px;
+
+    /* Headings */
+    --heading-clr: inherit;
+    --heading-fw: var(--fw-med);
+    --heading-ff: var(--base-ff);
 }
