@@ -248,7 +248,7 @@
 
     @if $outline-clr != null {
         @include focus-all {
-            outline: $outline-clr;
+            outline-color: $outline-clr;
         }
     }
 }
