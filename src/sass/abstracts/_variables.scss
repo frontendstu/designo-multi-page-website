@@ -62,4 +62,17 @@
     --link-outline-offset: 4px;
     --link-decoration: none;
     --link-decoration-hover: var(--link-decoration);
+
+    /* COMPONENTS
+     * ---------------------------------------------------------------------- */
+
+    /* ----- Buttons */
+    --btn-p: 1rem 1.5rem;
+    --btn-radius: 8px;
+    --btn-fw: var(--fw-med);
+    --btn-fs: var(--fs-200);
+    --btn-ff: var(--base-ff);
+    --btn-font: var(--btn-fw) var(--btn-fs) var(--btn-ff);
+    --btn-case: uppercase;
+    --btn-tracking: 1px;
 }

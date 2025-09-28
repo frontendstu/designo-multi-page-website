@@ -3,3 +3,14 @@
 /* =============================================================================
  * BUTTONS
  * ========================================================================== */
+
+.btn {
+    @include mixin.btn(
+        $width: fit-content,
+        $padding: var(--btn-p),
+        $radius: var(--btn-radius),
+        $font: var(--btn-font),
+        $tracking: var(--btn-tracking),
+        $case: var(--btn-case)
+    );
+}
