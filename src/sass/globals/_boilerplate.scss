@@ -9,3 +9,20 @@ body {
     font: var(--base-font);
     line-height: var(--base-leading);
 }
+
+/**
+ * HEADINGS
+ * -----------------------------------------------------------------------------
+ * This site does not set specified global styles for heading levels, instead 
+ * when a heading level is being used it must contain the `.heading` class. 
+ * This is done to prevent being locked into a global series of headings that 
+ * can become uncontrollable at a later stage. The styles defined in the 
+ * boilerplate `.heading` only contain the inherited colour, font weight and 
+ * family. You need to set the appearance of headings where required.
+ * -------------------------------------------------------------------------- */
+
+.heading {
+    color: var(--heading-clr);
+    font-weight: var(--heading-fw);
+    font-family: var(--heading-ff);
+}
