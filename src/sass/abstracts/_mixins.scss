@@ -232,7 +232,7 @@
         text-decoration: $decoration;
     }
 
-    @include mixin.hover-focus {
+    @include hover-focus {
         @if $border-color-hover {
             border-color: $border-color-hover;
         }
@@ -247,7 +247,7 @@
     }
 
     @if $outline-clr != null {
-        @include mixin.focus-all {
+        @include focus-all {
             outline: $outline-clr;
         }
     }
