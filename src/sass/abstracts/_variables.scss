@@ -33,4 +33,14 @@
 
     /* Font Family */
     --ff-sans: 'Jost', sans-serif;
+
+    /* ----- Typography */
+
+    /* Base */
+    --base-clr: var(--clr-neutral-800);
+    --base-fw: var(--fw-reg);
+    --base-fs: var(--fs-300);
+    --base-ff: var(--ff-sans);
+    --base-font: var(--base-fw) var(--base-fs) var(--base-ff);
+    --base-leading: 26px;
 }
