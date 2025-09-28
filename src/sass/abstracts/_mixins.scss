@@ -170,6 +170,7 @@
 
 @mixin btn(
     $width: null,
+    $gap: null,
     $padding: null,
     $radius: null,
     $transition: null,
@@ -186,8 +187,14 @@
     $decoration: null,
     $decoration-hover: null
 ) {
+    display: flex;
+
     @if $width != null {
         width: $width;
+    }
+
+    @if $gap != null {
+        gap: $gap;
     }
 
     @if $padding != null {
