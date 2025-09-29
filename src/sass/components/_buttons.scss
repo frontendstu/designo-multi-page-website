@@ -14,3 +14,25 @@
         $case: var(--btn-case)
     );
 }
+
+/**
+ * Button Types
+ * -------------------------------------------------------------------------- */
+
+.btn {
+    /* On Dark */
+    &[data-btn-type='on-dark'] {
+        @include mixin.btn(
+            $bg: var(--btn-on-dark-bg),
+            $bg-hover: var(--btn-on-dark-bg-hover),
+            $color: var(--btn-on-dark-clr),
+            $color-hover: var(--btn-on-dark-clr-hover),
+            $outline-clr: var(--btn-on-dark-bg-hover)
+        );
+    }
+
+    /* On Light */
+    &[data-btn-type='on-light'] {
+        @include mixin.btn();
+    }
+}

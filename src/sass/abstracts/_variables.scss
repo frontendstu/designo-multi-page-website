@@ -75,4 +75,10 @@
     --btn-font: var(--btn-fw) var(--btn-fs) var(--btn-ff);
     --btn-case: uppercase;
     --btn-tracking: 1px;
+
+    --btn-on-dark-bg: var(--clr-neutral-100);
+    --btn-on-dark-bg-hover: var(--clr-light-peach);
+    --btn-on-dark-clr: var(--clr-neutral-900);
+    --btn-on-dark-clr-hover: var(--clr-neutral-100);
+    --btn-on-dark-outline-clr: var(--clr-light-peach);
 }
