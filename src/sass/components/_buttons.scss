@@ -33,6 +33,11 @@
 
     /* On Light */
     &[data-btn-type='on-light'] {
-        @include mixin.btn();
+        @include mixin.btn(
+            $bg: var(--btn-on-light-bg),
+            $bg-hover: var(--btn-on-light-bg-hover),
+            $color: var(--btn-on-light-clr),
+            $color-hover: var(--btn-on-light-clr-hover)
+        );
     }
 }
