@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 // =============================================================================
 // MIXINS
 //
@@ -138,7 +140,7 @@
     // Define the valid position types
     $valid-types: static, relative, absolute, fixed, sticky;
 
-    @if index($valid-types, $type) {
+    @if list.index($valid-types, $type) {
         position: $type;
 
         @if $top != null {
