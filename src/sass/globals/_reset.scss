@@ -38,6 +38,7 @@ ol {
 button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
     &:focus,
     &:focus-within {
