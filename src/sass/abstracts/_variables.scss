@@ -122,6 +122,7 @@
     /* ----- 768px */
     @media (min-width: 48em) {
         /* Header */
+        --header-wrapper-max-w: 43.125rem;
         --header-menu-py: 0;
         --header-menu-bg: transparent;
         --header-menu-clr: var(--clr-neutral-800);
@@ -131,9 +132,13 @@
 
     /* ----- 1280px */
     @media (min-width: 80em) {
+        /* Header */
+        --header-wrapper-max-w: 62.5rem;
     }
 
     /* ----- 1440px */
     @media (min-width: 90em) {
+        /* Header */
+        --header-wrapper-max-w: 69.375rem;
     }
 }
