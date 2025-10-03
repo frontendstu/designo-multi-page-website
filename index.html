@@ -11,7 +11,50 @@
         <title>Frontend Mentor | Designo Multi-Page Website</title>
     </head>
     <body>
-        Font test
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-branding">
+                    <a href="index.html">
+                        <img
+                            src="src/assets/images/shared/desktop/logo-dark.svg"
+                            alt=""
+                        />
+
+                        <span class="sr-only">Designo</span>
+                    </a>
+                </div>
+
+                <button
+                    class="header-toggle"
+                    aria-controls="header-nav"
+                    aria-expanded="false"
+                >
+                    <img
+                        src="src/assets/images/shared/mobile/icon-hamburger.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="menu-open-icon"
+                    />
+
+                    <img
+                        src="src/assets/images/shared/mobile/icon-close.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="menu-close-icon"
+                    />
+
+                    <span class="sr-only">Toggle menu</span>
+                </button>
+
+                <nav class="header-menu">
+                    <ul class="header-menu-items">
+                        <li><a href="our-company.html">Our company</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <script type="module" src="/src/main.js"></script>
     </body>
