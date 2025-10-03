@@ -3,3 +3,123 @@
 /* =============================================================================
  * HEADER
  * ========================================================================== */
+
+.header {
+    @include mixin.position($type: fixed, $top: 0, $left: 0);
+
+    width: 100%;
+    padding: var(--header-p);
+    z-index: 999;
+    background-color: var(--header-bg);
+
+    /**
+     * Header Wrapper
+     * ---------------------------------------------------------------------- */
+
+    &-wrapper {
+        @include mixin.flex($direction: row, $justify: space-between);
+
+        max-width: var(--header-wrapper-max-w);
+        margin-inline: auto;
+    }
+
+    /**
+     * Header Branding
+     * ---------------------------------------------------------------------- */
+
+    &-branding a {
+        width: var(--header-branding-w);
+        opacity: var(--header-branding-opacity);
+        transition: var(--header-branding-transition);
+
+        @include mixin.hover-focus {
+            opacity: var(--header-branding-opacity-hover);
+        }
+    }
+
+    /**
+     * Header Toggle
+     * ---------------------------------------------------------------------- */
+
+    &-toggle {
+        display: none;
+
+        .menu-open-icon {
+            display: block;
+        }
+
+        .menu-close-icon {
+            display: none;
+        }
+
+        &[aria-expanded='true'] {
+            .menu-open-icon {
+                display: none;
+            }
+
+            .menu-close-icon {
+                display: block;
+            }
+        }
+    }
+
+    /**
+     * Header Menu
+     * ---------------------------------------------------------------------- */
+
+    &-menu {
+        z-index: 999;
+        color: var(--header-menu-clr);
+
+        &-items {
+            font-weight: var(--header-menu-items-fw);
+            font-size: var(--header-menu-items-fs);
+            letter-spacing: var(--header-menu-items-tracking);
+            text-transform: var(--header-menu-items-case);
+        }
+    }
+
+    /**
+     * Media Queries
+     * ---------------------------------------------------------------------- */
+
+    /* ----- < 768px */
+    @media (max-width: 47.98em) {
+        &-toggle {
+            display: block;
+        }
+
+        &-menu {
+            display: none;
+            position: fixed;
+            padding-block: var(--header-menu-py);
+
+            &[data-visible] {
+                @include mixin.size;
+                @include mixin.flex($justify: flex-start, $align: flex-start);
+
+                top: 6rem;
+                left: 0;
+                background-color: var(--header-menu-bg);
+            }
+
+            &-items {
+                @include mixin.flex(
+                    $align: flex-start,
+                    $gap: var(--header-menu-items-gap)
+                );
+                @include mixin.position($type: absolute, $left: 1.5rem);
+            }
+        }
+    }
+
+    /* ----- 768px */
+    @media (min-width: 48em) {
+        &-menu-items {
+            @include mixin.flex(
+                $direction: row,
+                $gap: var(--header-menu-items-gap)
+            );
+        }
+    }
+}
