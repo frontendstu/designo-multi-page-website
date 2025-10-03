@@ -112,4 +112,20 @@
     --header-menu-items-fs: var(--fs-500);
     --header-menu-items-tracking: 2px;
     --header-menu-items-case: uppercase;
+
+    /**
+     * MEDIA QUERIES
+     * ---------------------------------------------------------------------- */
+
+    /* ----- 768px */
+    @media (min-width: 48em) {
+    }
+
+    /* ----- 1280px */
+    @media (min-width: 80em) {
+    }
+
+    /* ----- 1440px */
+    @media (min-width: 90em) {
+    }
 }
