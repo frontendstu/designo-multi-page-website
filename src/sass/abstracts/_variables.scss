@@ -119,6 +119,12 @@
 
     /* ----- 768px */
     @media (min-width: 48em) {
+        /* Header */
+        --header-menu-py: 0;
+        --header-menu-bg: transparent;
+        --header-menu-clr: var(--clr-neutral-800);
+        --header-menu-items-gap: 2.625rem;
+        --header-menu-items-fs: var(--fs-100);
     }
 
     /* ----- 1280px */
