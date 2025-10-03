@@ -38,6 +38,7 @@ a {
 
     @include mixin.hover {
         color: var(--link-clr-hover);
+        border-bottom: var(--link-border-b-hover);
     }
 
     @include mixin.focus-all {
