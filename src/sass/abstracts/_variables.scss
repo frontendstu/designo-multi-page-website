@@ -89,4 +89,27 @@
     --btn-on-light-bg-hover: var(--clr-light-peach);
     --btn-on-light-clr: var(--clr-neutral-100);
     --btn-on-light-clr-hover: var(--clr-neutral-100);
+
+    /**
+     * LAYOUT
+     * ---------------------------------------------------------------------- */
+
+    /* ----- Header */
+    --header-p: 2.125rem 1.5rem;
+    --header-bg: var(--clr-neutral-100);
+    --header-wrapper-max-w: 100%;
+
+    --header-branding-w: 12.5rem;
+    --header-branding-opacity: 1;
+    --header-branding-opacity-hover: 0.5;
+    --header-branding-transition: opacity 200ms ease-in-out;
+
+    --header-menu-py: 3rem;
+    --header-menu-bg: var(--clr-neutral-800);
+
+    --header-menu-items-clr: var(--clr-neutral-100);
+    --header-menu-items-fw: var(--fw-reg);
+    --header-menu-items-fs: var(--fs-500);
+    --header-menu-items-tracking: 2px;
+    --header-menu-items-case: uppercase;
 }
