@@ -1,0 +1,19 @@
+// =============================================================================
+//
+// BASE
+//
+// Version: 1.0.0 (30/12/2025)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// This file is used to import the following partials using the `@forward`
+// module directive for base specific styles:
+//
+// - _fonts.scss:       Contains the methods for loading custom fonts (Jost)
+//                      into the site using the `font-face` mixin.
+// - _reset.scss:       Contains the reset method.
+// - _boilerplate.scss: Contains the site's global styles for typography,
+//                      links, etc.
+//
+// =============================================================================
