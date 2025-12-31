@@ -13,5 +13,15 @@
 // =============================================================================
 
 :root {
-    /* Add custom properties here */
+    /* ---------- COLOURS */
+
+    /* --- Neutrals */
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(210, 17%, 95%);
+    --clr-neutral-600: hsl(264, 5%, 20%);
+    --clr-neutral-900: hsl(270, 3%, 11%);
+
+    /* --- Branding */
+    --clr-branding: hsl(11, 73%, 66%);
+    --clr-branding-light: hsl(11, 100%, 80%);
 }
