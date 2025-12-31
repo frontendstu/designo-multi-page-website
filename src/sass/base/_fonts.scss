@@ -11,3 +11,13 @@
  * Load all custom fonts
  *
  * ========================================================================== */
+
+/*
+ * Load Jost Font
+ * -------------------------------------------------------------------------- */
+
+@include mixin.font-face(
+    $url: '../assets/fonts/Jost/Jost-VariableFont_wght.ttf',
+    $weight-range: 400 700,
+    $family: 'Jost'
+);
