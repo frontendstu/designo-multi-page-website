@@ -1,0 +1,77 @@
+// =============================================================================
+//
+// MIXIN: FLEX
+//
+// Version: 1.0.0 (31/12/2025)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The flex mixin is used as a shorthand utility mixin for declaring the
+// flexbox layout model.
+//
+// It provides a clean and configurable mixin for setting common flexbox
+// container properties, including direction, wrapping, alignment, and spacing
+// while avoiding unnecessary CSS output when values are not provided.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+//
+// @param {String}  $display [flex] - The display type
+// @param {String}  $direction      - The flex direction
+// @param {String}  $wrap           - The flex wrapper behaviour
+// @param {String}  $justify        - Alignment along the main axis
+// @param {String}  $align-items    - Alignment along the cross axis for items
+// @param {String}  $align-content  - Alignment of flex lines when wrapping
+// @param {String}  $row-gap        - Vertical space between flex rows
+// @param {String}  $col-gap        - Horizontal spacing between flex columns
+//
+// -----------------------------------------------------------------------------
+//
+// Usage:
+// @include mixin.flex(
+//     $direction: row,
+//     $wrap: wrap,
+//     $justify: space-between,
+//     $row-gap: 1rem
+// );
+//
+// =============================================================================
+
+@mixin flex(
+    $display: flex,
+    $direction: null,
+    $wrap: null,
+    $justify: null,
+    $align-items: null,
+    $align-content: null,
+    $row-gap: null,
+    $col-gap: null
+) {
+    display: $display;
+
+    @if $direction or $wrap {
+        flex-flow: $direction $wrap;
+    }
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align-items {
+        align-items: $align-items;
+    }
+
+    @if $align-content {
+        align-content: $align-content;
+    }
+
+    @if $row-gap and $col-gap {
+        gap: $row-gap $col-gap;
+    } @else if $row-gap {
+        row-gap: $row-gap;
+    } @else if $col-gap {
+        column-gap: $col-gap;
+    }
+}
