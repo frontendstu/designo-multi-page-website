@@ -1,0 +1,71 @@
+// =============================================================================
+//
+// MIXIN: STATE SELECTOR
+//
+// Version: 1.0.0 (31/12/2025)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The state selector mixin generates a combined selector for common
+// interactive states (i.e., hover, focus, focus-visibke, focus-within,
+// active). Each state can be enabled or disabled via boolean arguments,
+// allowing tight control which pseudo-classes are included.
+//
+// The state selector mixin is useful when you want to apply the same visual
+// styles across multiple interaction states without repeating selectors.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+// @param {Bool} $hover [true] - :hover
+// @param {Bool} $focus [true] - :focus
+// @param {Bool} $focus-visible [true] - :focus-visible
+// @param {Bool} $focus-within [false] - :focus-within
+// @param {Bool} $active [false] - :active
+//
+// -----------------------------------------------------------------------------
+//
+// Usage:
+//
+// .input {
+//     @include mixin.state-selector($hover: false, $focus-visible: true) {
+//         border-color: blue;
+//     }
+// }
+//
+// =============================================================================
+
+@mixin state-selector(
+    $hover: true,
+    $focus: true,
+    $focus-visible: true,
+    $focus-within: false,
+    $active: false
+) {
+    $selectors: ();
+
+    @if $hover {
+        $selectors: append($selectors, "&:hover", comma);
+    }
+
+    @if $focus {
+        $selectors: append($selectors, "&:focus", comma);
+    }
+
+    @if $focus-visible {
+        $selectors: append($selectors, "&:focus-visible", comma);
+    }
+
+    @if $focus-within {
+        $selectors: append($selectors, "&:focus-within", comma);
+    }
+
+    @if $active {
+        $selectors: append($selectors, "&:active", comma);
+    }
+
+    #{$selectors} {
+        @content;
+    }
+}
