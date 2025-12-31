@@ -1,0 +1,46 @@
+// =============================================================================
+//
+// MIXIN: FONT FACE
+//
+// Version: 1.0.0 (31/12/2025)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The font-face mixin is used to generate a `@font-face` declaration for
+// loading custom fonts into the site.
+//
+// This mixin is designed to support modern font loading practices, including
+// variable font weight range and the use of `font-display: swap` for improved
+// loading speeds.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+//
+// @param {String}              $url - The path to the font file
+// @param {String | Number}     $weight-range - The font-weight range
+// @param {String}              $family - The font-family name to register
+// @param {String}              $style [normal] - The font style
+//
+// -----------------------------------------------------------------------------
+//
+// Usage:
+//
+// @include mixin.font-face(
+//     "../fonts/jost/jost-variable.ttf",
+//     100 700,
+//     "Jost"
+// );
+//
+// =============================================================================
+
+@mixin font-face($url, $weight-range, $family, $style: normal) {
+    @font-face {
+        src: url(#{$url});
+        font-weight: #{$weight-range};
+        font-family: #{$family};
+        font-style: #{$style};
+        font-display: swap;
+    }
+}
