@@ -10,12 +10,13 @@
  * Sets the base styles that establishes the baseline behaviour of the project.
  *
  * These boilerplate styles define low-level, opinionated defaults that apply
- * broadly across the site, such as box-sizing rules, default element
- * behaviours, and sensible resets.
+ * broadly across the site, such as box-sizing rules and default element
+ * behaviours.
  *
  * These styles are intentionally global and are applied early in the
  * stylesheet to ensure a consistent and predictable foundation for all
  * components and layouts.
+ *
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
