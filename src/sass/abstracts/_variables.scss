@@ -47,5 +47,5 @@
     /* --- Font Family */
     --ff-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji":
     --ff-jost: "Jost", var(--ff-sans);
-    --ff-base: var(--ff-jost);
+    --ff-base: var(--ff-jost), var(--ff-sans);
 }
