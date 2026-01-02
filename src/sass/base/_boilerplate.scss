@@ -35,7 +35,9 @@ body {
     line-height: var(--copy-leading);
 }
 
+// -----------------------------------------------------------------------------
 // Loop through heading levels 1-6 to apply the global styles for headings
+// -----------------------------------------------------------------------------
 $headings: ();
 
 @for $i from 1 through 6 {
