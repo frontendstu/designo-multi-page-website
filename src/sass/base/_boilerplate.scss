@@ -20,3 +20,17 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * GLOBAL TYPOGRAPHY
+ * -----------------------------------------------------------------------------
+ *
+ * Sets the global typography styles for base copy and headings.
+ *
+ * ========================================================================== */
+
+body {
+    color: var(--copy-clr);
+    font: var(--copy-font);
+    line-height: var(--copy-leading);
+}

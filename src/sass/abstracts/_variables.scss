@@ -48,4 +48,14 @@
     --ff-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --ff-jost: "Jost", var(--ff-sans);
     --ff-base: var(--ff-jost);
+
+    /* ---------- BOILERPLATE */
+
+    /* --- Copy */
+    --copy-clr: var(--clr-neutral-800);
+    --copy-fw: var(--fw-reg);
+    --copy-fs: var(--fs-300);
+    --copy-ff: var(--ff-jost);
+    --copy-font: var(--copy-fw) var(--copy-fs) var(--copy-ff);
+    --copy-leading: 1.625em;
 }
