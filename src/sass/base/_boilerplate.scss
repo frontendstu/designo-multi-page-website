@@ -34,3 +34,18 @@ body {
     font: var(--copy-font);
     line-height: var(--copy-leading);
 }
+
+// Loop through heading levels 1-6 to apply the global styles for headings
+$headings: ();
+
+@for $i from 1 through 6 {
+    $headings: append($headings, h#{$i}, comma);
+}
+
+#{$headings} {
+    color: var(--heading-clr);
+    font-weight: var(--heading-fw);
+    line-height: var(--heading-leading);
+    letter-spacing: var(--heading-tracking);
+    text-transform: var(--heading-case);
+}

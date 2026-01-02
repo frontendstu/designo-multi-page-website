@@ -58,4 +58,11 @@
     --copy-ff: var(--ff-jost);
     --copy-font: var(--copy-fw) var(--copy-fs) var(--copy-ff);
     --copy-leading: 1.625em;
+
+    /* --- Headings */
+    --heading-clr: inherit;
+    --heading-fw: var(--fw-med);
+    --heading-leading: var(--copy-leading);
+    --heading-tracking: 5px;
+    --heading-case: uppercase;
 }
