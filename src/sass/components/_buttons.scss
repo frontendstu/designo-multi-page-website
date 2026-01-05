@@ -76,3 +76,27 @@
     }
 
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * Button On Dark
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the button variant intended for use on dark or high-contrast
+ * backgrounds.
+ *
+ * ========================================================================== */
+
+.btn-on-dark {
+    background-color: var(--btn-dark-bg);
+    color: var(--btn-dark-clr);
+
+    @include mixin.state-selector {
+        background-color: var(--btn-dark-bg-active);
+        color: var(--btn-dark-clr-active);
+    }
+
+    @include mixin.state-selector($hover: false, $focus-within: true) {
+        outline-color: var(--btn-dark-outline-clr);
+    }
+}

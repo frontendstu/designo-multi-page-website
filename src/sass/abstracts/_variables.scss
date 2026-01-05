@@ -103,6 +103,12 @@
     --btn-outline-w: 2px;
     --btn-outline-offset: 2px;
 
+    --btn-dark-bg: var(--clr-neutral-100);
+    --btn-dark-bg-active: var(--clr-branding-light);
+    --btn-dark-clr: var(--clr-neutral-800);
+    --btn-dark-clr-active: var(--clr-neutral-100);
+    --btn-dark-outline-clr: var(--btn-dark-clr-active);
+
 
     /* ---------- MEDIA QUERIES */
 
