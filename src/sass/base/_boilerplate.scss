@@ -69,3 +69,31 @@ $headings: (
         font-size: var(#{$var});
     }
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * GLOBAL LINKS
+ * -----------------------------------------------------------------------------
+ *
+ * Sets the global link styles. The link colour default is set to inherit so it
+ * is your responsiblilty to set the `<a>` colour.
+ *
+ * ========================================================================== */
+
+a {
+    color: var(--link-clr);
+    text-decoration: var(--link-decoration);
+
+    @include mixin.state-selector($focus: false, $focus-visible: false) {
+        color: var(--link-clr-active);
+        border-bottom: var(--link-border-b-active);
+        text-decoration: var(--link-decoration-active);
+    }
+
+    @include mixin.state-selector($hover: false, $active: true) {
+        color: var(--link-clr-focus);
+        border-bottom: var(--link-border-b-focused);
+        text-decoration: var(--link-decoration-focused);
+        outline: var(--link-outline-focused);
+    }
+}

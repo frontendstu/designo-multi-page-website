@@ -70,6 +70,18 @@
     --heading-h2-fs: var(--fs-600);
     --heading-h3-fs: var(--fs-400);
 
+    /* --- Links */
+    --link-clr: inherit;
+    --link-clr-active: inherit;
+    --link-clr-focused: inherit;
+    --link-border-b-active: 1px solid var(--clr-neutral-800);
+    --link-border-b-focused: var(--link-border-b-active);
+    --link-outline-focused: none;
+    --link-decoration: none;
+    --link-decoration-active: none;
+    --link-decoration-focused: none;
+
+
     /* ---------- MEDIA QUERIES */
 
     @media(min-width: 48em) {
