@@ -1,0 +1,29 @@
+/* =============================================================================
+ * BUTTONS
+ *
+ * Version: 1.0.0 (05/01/2026)
+ * Author: Stu Cowley
+ *
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * This partial defines all global button styles used throughout the site.
+ *
+ * It establishes the core `.btn` class, which provides the foundational button
+ * structure including layout, spacing, typography and interaction behaviour.
+ * This ensures all buttons are share a consistent baseline regardless of
+ * content or implementation.
+ *
+ * In addition to the base button setup, the two button variants are also
+ * defined to be used across the design system:
+ *
+ * - Button On Dark  (`.btn-on-dark`)
+ * - Button On Light (`.btn-on-light`)
+ *
+ * Button styles defined here are global and reusable. Component-specific or
+ * one-off button adjustments should be avoided and handled at the component
+ * level only when absolutely necessary.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
