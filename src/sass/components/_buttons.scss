@@ -100,3 +100,27 @@
         outline-color: var(--btn-dark-outline-clr);
     }
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * Button On Light
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the button variant intended for use on light or low-contrast
+ * backgrounds.
+ *
+ * ========================================================================== */
+
+.btn-on-light {
+    background-color: var(--btn-light-bg);
+    color: var(--btn-light-clr);
+
+    @include mixin.state-selector {
+        background-color: var(--btn-light-bg-active);
+        color: var(--btn-light-clr-active);
+    }
+
+    @include mixin.state-selector($hover: false, $focus-within: true) {
+        outline-color: var(--btn-light-outline-clr);
+    }
+}

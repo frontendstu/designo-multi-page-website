@@ -109,6 +109,12 @@
     --btn-dark-clr-active: var(--clr-neutral-100);
     --btn-dark-outline-clr: var(--btn-dark-clr-active);
 
+    --btn-light-bg: var(--clr-branding);
+    --btn-light-bg-active: var(--clr-branding-light);
+    --btn-light-clr: var(--clr-neutral-100);
+    --btn-light-clr-active: var(--btn-light-clr);
+    --btn-light-outline-clr: var(--btn-light-bg-active);
+
 
     /* ---------- MEDIA QUERIES */
 
