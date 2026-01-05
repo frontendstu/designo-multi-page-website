@@ -27,3 +27,52 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * -----------------------------------------------------------------------------
+ * BASE BUTTON
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the global button base styles for all buttons via the `.btn` class.
+ *
+ * The base button styles establish a consistent structual and typographic
+ * foundation, including layout, spacing, font settings, and text treatment. It
+ * is intentionally token-driven, relying on CSS custom properties to allow for
+ * flexible theming and contextual overrides without modifying the core button
+ * styles.
+ *
+ * Interaction states are handled in a controlled manner to ensure
+ * accessibility and visual consistency. Default link styles are neutralised
+ * where necessary, and a clear focus treatment is applied to support keyboard
+ * and assistive technology users.
+ *
+ * The `.btn` class is intended to be used as the foundation for all button
+ * variants. Visual styling such as colours and backgrounds, should be applied
+ * via contextual variants (e.g. Button On Dark / Button On Light) rather than
+ * altering the base button directly.
+ *
+ * ========================================================================== */
+
+.btn {
+    @include mixin.flex($align-items: center, $justify: center);
+
+    width: fit-content;
+    padding: var(--btn-p);
+    transition: var(--btn-transition);
+    border-radius: var(--btn-radius);
+    font: var(--btn-font);
+    letter-spacing: var(--btn-tracking);
+    text-transform: var(--btn-case);
+
+    @include mixin.state-selector {
+        border-bottom: none; /* Remove global border bottom on hover/select */
+    }
+
+    @include mixin.state-selector($hover: false, $focus-within: true) {
+        outline-color: var(--btn-outline-clr);
+        outline-width: var(--btn-outline-w);
+        outline-style: solid;
+        outline-offset: var(--btn-outline-offset);
+    }
+
+}

@@ -87,6 +87,22 @@
     --container-max-w: 20.4375rem;
     --container-p: 0.25rem;
 
+    /* ---------- COMPONENTS */
+
+    /* --- Buttons */
+    --btn-p: 0.925rem 1.5rem;
+    --btn-radius: 8px;
+    --btn-transition: background-color 150ms ease-in-out, color 200ms ease-in-out;
+    --btn-fw: var(--fw-med);
+    --btn-fs: var(--fs-200);
+    --btn-ff: var(--copy-ff);
+    --btn-font: var(--btn-fw) var(--btn-fs) var(--btn-ff);
+    --btn-tracking: 1px;
+    --btn-case: uppercase;
+    --btn-outline-clr: inherit;
+    --btn-outline-w: 2px;
+    --btn-outline-offset: 2px;
+
 
     /* ---------- MEDIA QUERIES */
 
