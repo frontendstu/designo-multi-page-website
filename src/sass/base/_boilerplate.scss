@@ -19,6 +19,7 @@
  *
  * ========================================================================== */
 
+@use 'sass:list';
 @use '../abstracts/mixins' as mixin;
 
 /**
@@ -42,7 +43,7 @@ body {
 $headings: ();
 
 @for $i from 1 through 6 {
-    $headings: append($headings, h#{$i}, comma);
+    $headings: list.append($headings, h#{$i}, comma);
 }
 
 #{$headings} {
