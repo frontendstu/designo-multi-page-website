@@ -81,11 +81,30 @@
     --link-decoration-active: none;
     --link-decoration-focused: none;
 
+    /* ---------- LAYOUT */
+
+    /* --- Container */
+    --container-max-w: 20.4375rem;
+    --container-p: 0.25rem;
+
 
     /* ---------- MEDIA QUERIES */
 
+    /* 768px */
     @media(min-width: 48em) {
         --heading-h1-fs: var(--fs-900);
         --heading-h2-fs: var(--fs-800);
+
+        --container-max-w: 43.125rem;
+    }
+
+    /* 1024px */
+    @media(min-width: 64em) {
+        --container-max-w: 56.25rem;
+    }
+
+    /* 1280px */
+    @media(min-width: 80em) {
+        --container-max-w: 69.375rem;
     }
 }

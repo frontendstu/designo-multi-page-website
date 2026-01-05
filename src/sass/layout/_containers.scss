@@ -21,3 +21,28 @@
  * sole responsibility is to define layout boundries and content flow.
  *
  * ========================================================================== */
+
+/**
+ * -----------------------------------------------------------------------------
+ * CONTAINER
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the core container class used to constrain the maximum width of site
+ * content and centre it within the viewport.
+ *
+ * The container establishes a consistent horizontal boundary for layouts,
+ * ensuring content remains readable and visually aligned across screen sizes.
+ * A small amount of padding is applied to prevent content from touching the
+ * edges of the viewport at narrower widths.
+ *
+ * Container media queries for different viewport widths are defined in the
+ * `:root` and can be adjusted there.
+ *
+ * ========================================================================== */
+
+
+.container {
+    max-width: var(--container-max-w);
+    padding: var(--container-p);
+    margin-inline: auto;
+}
