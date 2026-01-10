@@ -36,6 +36,8 @@
 //
 // =============================================================================
 
+@use "sass:list";
+
 @mixin state-selector(
     $hover: true,
     $focus: true,
@@ -46,23 +48,23 @@
     $selectors: ();
 
     @if $hover {
-        $selectors: append($selectors, "&:hover", comma);
+        $selectors: list.append($selectors, "&:hover", comma);
     }
 
     @if $focus {
-        $selectors: append($selectors, "&:focus", comma);
+        $selectors: list.append($selectors, "&:focus", comma);
     }
 
     @if $focus-visible {
-        $selectors: append($selectors, "&:focus-visible", comma);
+        $selectors: list.append($selectors, "&:focus-visible", comma);
     }
 
     @if $focus-within {
-        $selectors: append($selectors, "&:focus-within", comma);
+        $selectors: list.append($selectors, "&:focus-within", comma);
     }
 
     @if $active {
-        $selectors: append($selectors, "&:active", comma);
+        $selectors: list.append($selectors, "&:active", comma);
     }
 
     #{$selectors} {
