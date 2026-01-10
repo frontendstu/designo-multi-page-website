@@ -1,0 +1,29 @@
+/* =============================================================================
+ *
+ * HEADER
+ *
+ * Version: 1.0.0 (10/01/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the global header, including its structual layout, positioning and
+ * interaction-related styles.
+ *
+ * The header provides persistent access to core site navigation and branding,
+ * and is responsible for maintaining clear usability across varying screen
+ * sizes and device types. Styles defined here ensure that the header remains
+ * visually consistent, accessible and functionally predictable throughout the
+ * site experience.
+ *
+ * The header partial acts as the central location for header-specific patterns
+ * such as branding alignment, navigation layout, responsiveness, and any
+ * supporting interactive components (e.g. mobile menus). Visual styling
+ * specific to child components should be defined in their respective partials
+ * in order to preserve clarity and seperation of concerns.
+ *
+ * Header styles are intended to remain global and non-contextual. Page-level
+ * orverrrides should be avoided unless strictly necessary, and implemented
+ * with care to maintain predictable behaviour across the design system.
+ *
+ * ========================================================================== */
