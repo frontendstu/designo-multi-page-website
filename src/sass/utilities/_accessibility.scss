@@ -59,3 +59,44 @@
     white-space: nowrap;
     border-width: 0;
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * FOCUS REVEAL
+ * -----------------------------------------------------------------------------
+ *
+ * The `.focus-reveal` utility class hides content visually while keeping it
+ * available to screen readers, but allows the content to become visible when
+ * focused via keyboard navigation.
+ *
+ * This utility is typically used for skip links or interactive controls that
+ * should only appear when keyboard users need them, while remaining invisible
+ * during pointer-based interaction.
+ *
+ * ========================================================================== */
+
+.focus-reveal {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
+    @include mixin.state-selector(
+        $hover: false,
+        $focus: true,
+        $focus-visible: true
+    ) {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+    }
+}
