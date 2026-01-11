@@ -25,3 +25,37 @@
  * handled elsewhere to maintain clear separation of responsibilities.
  *
  * ========================================================================== */
+
+/**
+ * -----------------------------------------------------------------------------
+ * SCREEN READER ONLY
+ * -----------------------------------------------------------------------------
+ *
+ * The `.sr-only` utility class hides content visually while keeping it
+ * available to assistive technologies such as screen readers. This allows
+ * non-visual users to access contextual information(e.g. descriptive labels,
+ * accessibility hints, or expand control text) without affecting the visible
+ * layout.
+ *
+ * This technique relies on positioning and clipping to remove content from the
+ * visual rendering surface while maintaining it in the accessibility tree. It
+ * is appropriate for content that should remain semantically meaningful but
+ * does not need to be presented visually.
+ *
+ * For content that should become visible when focused via a keyboard
+ * navigation, consider paring with corresponding "focus-reveal" utility rather
+ * than `.sr-only` alone.
+ *
+ * ========================================================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
