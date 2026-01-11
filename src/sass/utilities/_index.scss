@@ -10,4 +10,8 @@
 // This file is used to import the following partials using the `@forward`
 // module directive for utility specific styles:
 //
+// - accessibility.scss: Contains accessibility specific utility classes
+//
 // =============================================================================
+
+@forward 'accessibility';

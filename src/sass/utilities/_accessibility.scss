@@ -1,0 +1,27 @@
+/* =============================================================================
+ *
+ * ACCESSIBILITY
+ *
+ * Version: 1.0.0 (11/01/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * Defines global accessibility-focused utility classes that enhance or
+ * preserve access to content for assistive technologies without altering the
+ * visual layout for sighted users.
+ *
+ * These utilities are designed to address specific accessibility patterns such
+ * as providing screen-reader-only content, revealing alternative text in focus
+ * contexts, and supporting non-visual navigation.
+ *
+ * Classes defined here are intentionally minimal, and non-visual. Their sole
+ * purpose is to improve the usability of the interface for users of screen
+ * readers, keyboard navigation, and other assistive technologies.
+ *
+ * Utilities in this partial should not introduce aesthetic styling and should
+ * remained focused on semantic, navigational, or preceptual accessibility
+ * needs. Additional visual styling or component specific behaviour should be
+ * handled elsewhere to maintain clear separation of responsibilities.
+ *
+ * ========================================================================== */
