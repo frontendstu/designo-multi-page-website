@@ -101,6 +101,11 @@
     --header-nav-transition-active: transform 200ms ease-out, opacity 200ms ease-out, visibility 0s;
     --header-nav-bg: var(--clr-neutral-800);
 
+    --header-overlay-inset: 0 0 0 0;
+    --header-overlay-bg: rgba(0, 0, 0, 0.5);
+    --header-overlay-transition: opacity 200ms ease-out, visibility 0ms linear 200ms;
+    --header-overlay-open-transition: opacity 200ms ease-out, visibility 0s;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */

@@ -34,6 +34,25 @@
     position: relative;
     background-color: var(--header-bg);
 
+    // Header Overlay (initially hidden)
+    &::after {
+        content: "";
+        position: fixed;
+        inset: var(--header-overlay-inset);
+        background-color: var(--header-overlay-bg);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--header-overlay-transition);
+        z-index: 10; // Overlay should sit above content, below the header.
+    }
+
+    // When visible, show overlay
+    &[data-nav-open="true"]::after {
+        opacity: 1;
+        visibility: visible;
+        transition: var(--header-overlay-open-transition);
+    }
+
     /**
      * -------------------------------------------------------------------------
      * HEADER INNER
