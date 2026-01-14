@@ -160,15 +160,18 @@
      * ====================================================================== */
 
     &-nav {
-        @include mixin.position($type: absolute, $top: 100%);
+        @include mixin.position(
+            $type: absolute,
+            $top: var(--header-nav-pos-top)
+        );
 
-        position: absolute;
         inset-inline: 0;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: var(--header-nav-transition);
         background-color: var(--header-nav-bg);
+        z-index: 999;
 
         // When visible
         &[data-visible="true"] {
