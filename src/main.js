@@ -8,6 +8,7 @@ import './sass/style.scss';
  *
  * ========================================================================== */
 
+const header = document.querySelector(".header");
 const nav = document.querySelector(".header-nav");
 const toggle = document.querySelector(".header-toggle");
 
@@ -16,4 +17,5 @@ toggle.addEventListener("click", () => {
 
     toggle.setAttribute("aria-expanded", String(!isOpen));
     nav.setAttribute("data-visible", String(!isOpen));
-});
+    header.setAttribute("data-nav-open", String(!isOpen));
+})
