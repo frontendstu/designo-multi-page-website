@@ -1,0 +1,54 @@
+// =============================================================================
+//
+// MIXIN: SIZE
+//
+// Version: 1.0.0 (14/01/2026)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The size mixin is a utility shorthand used to define the sizing constraints
+// of an element using the width, height, max-width and max-height properties.
+//
+// Each parameter is optional. Only the properties with non-null values are
+// output, keeping the generated CSS as lean as possible.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+//
+// @param {String|Number}  $width      - The width of an element
+// @param {String|Number}  $height     - The height of an element
+// @param {String|Number}  $max-width  - The max width of an element
+// @param {String|Number}  $max-height - The max height of an element
+//
+// -----------------------------------------------------------------------------
+//
+// Usage:
+//
+// @include mixin.size($width: 20rem, $height: auto);
+//
+// =============================================================================
+
+@mixin size(
+    $width: null,
+    $height: null,
+    $max-width: null,
+    $max-height: null
+) {
+    @if $width != null {
+        width: $width;
+    }
+
+    @if $height != null {
+        height: $height;
+    }
+
+    @if $max-width != null {
+        max-width: $max-width;
+    }
+
+    @if $max-height != null {
+        max-height: $max-height;
+    }
+}
