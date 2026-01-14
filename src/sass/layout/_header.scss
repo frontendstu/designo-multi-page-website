@@ -31,6 +31,7 @@
 @use '../abstracts/mixins' as mixin;
 
 .header {
+    position: relative;
     background-color: var(--header-bg);
 
     /**
