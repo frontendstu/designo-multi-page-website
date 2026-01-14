@@ -51,4 +51,31 @@
         padding-block: var(--header-inner-py);
         margin-inline: auto;
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * HEADER BRANDING
+     * -------------------------------------------------------------------------
+     *
+     * The header branding styles define the appearance of the site branding
+     * that is displayed in the header. The site's branding is only displayed
+     * in two placed on this site. That being in the header and the footer.
+     *
+     * ====================================================================== */
+
+    &-branding {
+        @include mixin.size($width: var(--header-branding-w));
+
+        transition: var(--header-branding-transition);
+
+        @include mixin.state-selector {
+            opacity: var(--header-branding-opacity-active);
+
+            /**
+             * Overrides the default a:hover `border-bottom` from being
+             * displayed when the branding image is on hover.
+             */
+            border-bottom: none;
+        }
+    }
 }

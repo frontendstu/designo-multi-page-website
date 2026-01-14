@@ -93,6 +93,10 @@
     --header-inner-max-w: var(--container-max-w);
     --header-inner-py: 2.125rem;
 
+    --header-branding-w: 12.625rem;
+    --header-branding-transition: opacity 150ms ease-in-out;
+    --header-branding-opacity-active: 0.5;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */
