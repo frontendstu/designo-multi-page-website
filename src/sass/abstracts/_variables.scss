@@ -90,6 +90,9 @@
     /* --- Header */
     --header-bg: var(--clr-neutral-100);
 
+    --header-inner-max-w: var(--container-max-w);
+    --header-inner-py: 2.125rem;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */
@@ -127,6 +130,8 @@
         --heading-h2-fs: var(--fs-800);
 
         --container-max-w: 43.125rem;
+
+        --header-inner-py: 4rem;
     }
 
     /* 1024px */

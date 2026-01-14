@@ -32,4 +32,23 @@
 
 .header {
     background-color: var(--header-bg);
+
+    /**
+     * -------------------------------------------------------------------------
+     * HEADER INNER
+     * -------------------------------------------------------------------------
+     *
+     * The header inner works as a container that is specific to the header. It
+     * applies the same max width custom property value as the `.container`. A
+     * block padding is applied also.
+     *
+     * ====================================================================== */
+
+    &-inner {
+        @include mixin.flex($align-items: center, $justify: space-between);
+
+        max-width: var(--header-inner-max-w);
+        padding-block: var(--header-inner-py);
+        margin-inline: auto;
+    }
 }
