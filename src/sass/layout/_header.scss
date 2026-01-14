@@ -99,4 +99,31 @@
         background: none;
         cursor: pointer;
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * HEADER ICONS
+     * -------------------------------------------------------------------------
+     *
+     * Sets the styles for the header icons. Either the hamburger or close
+     * icons will display depending if the `aria-expanded` is true or false.
+     * If `aria-expanded` is false, the hamburger icon will be display. If the
+     * `aria-expanded` is true, the hamburger icon will hide and the close menu
+     * icon will be displayed instead.
+     *
+     * ====================================================================== */
+
+    &-icon {
+        &-close {
+            display: none;
+        }
+    }
+
+    &-toggle[aria-expanded="true"] .header-icon-hamburger {
+        display: none;
+    }
+
+    &-toggle[aria-expanded="true"] .header-icon-close {
+        display: inline-flex;
+    }
 }
