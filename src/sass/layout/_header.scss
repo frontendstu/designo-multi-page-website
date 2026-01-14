@@ -29,3 +29,7 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.header {
+    background-color: var(--header-bg);
+}
