@@ -97,6 +97,10 @@
     --header-branding-transition: opacity 150ms ease-in-out;
     --header-branding-opacity-active: 0.5;
 
+    --header-nav-transition: transform 200ms ease-out, opacity 200ms ease-out, visibility 0ms linear 200ms;
+    --header-nav-transition-active: transform 200ms ease-out, opacity 200ms ease-out, visibility 0s;
+    --header-nav-bg: var(--clr-neutral-800);
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */
