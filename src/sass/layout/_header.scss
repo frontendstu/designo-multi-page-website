@@ -204,3 +204,40 @@
         letter-spacing: var(--header-menu-tracking);
     }
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * The media query rules that switch the header from the mobile layout (stacked
+ * nav and toggle button) to the tablet layout (inline navigation without
+ * toggle). Handles visibility, positioning, and spacing changes required for
+ * desktop viewports.
+ *
+ * =============================================================================
+
+/* ----- 768px */
+@media(min-width: 48em) {
+    .header {
+        &::after {
+            display: none;
+        }
+
+        &-toggle {
+            display: none;
+        }
+
+        &-nav {
+            position: static;
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &-menu {
+            flex-direction: row;
+            column-gap: var(--header-menu-col-gap);
+        }
+    }
+}

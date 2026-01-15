@@ -152,7 +152,12 @@
 
         --container-max-w: 43.125rem;
 
-        --header-inner-py: 4rem;
+        --header-inner-py: 2rem;
+        --header-nav-bg: transparent;
+        --header-menu-p: 0;
+        --header-menu-col-gap: 2.625rem;
+        --header-menu-clr: var(--clr-neutral-800);
+        --header-menu-fs: var(--fs-100);
     }
 
     /* 1024px */
