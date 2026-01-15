@@ -220,6 +220,8 @@
 /* ----- 768px */
 @media(min-width: 48em) {
     .header {
+        margin-top: var(--header-mt);
+
         &::after {
             display: none;
         }
