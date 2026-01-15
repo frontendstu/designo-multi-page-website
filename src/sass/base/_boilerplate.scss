@@ -97,3 +97,19 @@ a {
         outline: var(--link-outline-focused);
     }
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * GLOBAL LISTS
+ * -----------------------------------------------------------------------------
+ *
+ * Sets the global list styles. This will remove the list style as there are no
+ * lists in this project that require list styling. If you require a list style
+ * you will need to define this in the respective class.
+ *
+ * ========================================================================== */
+
+ul,
+ol {
+    list-style: none;
+}
