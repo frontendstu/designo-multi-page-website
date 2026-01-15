@@ -30,6 +30,27 @@
 
 /**
  * -----------------------------------------------------------------------------
+ * SR-ONLY PLACEHOLDER
+ * -----------------------------------------------------------------------------
+ *
+ * As both the `.sr-only` and `.focus-reveal` are both using repeating styles a
+ * `sr-only` placeholder is created to prevent repeating styles.
+ */
+
+%sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * SCREEN READER ONLY
  * -----------------------------------------------------------------------------
  *
@@ -51,15 +72,7 @@
  * ========================================================================== */
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+    @extend %sr-only;
 }
 
 /**
@@ -78,16 +91,7 @@
  * ========================================================================== */
 
 .focus-reveal {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-
+    @extend %sr-only;
     @include mixin.state-selector(
         $hover: false,
         $focus: true,
