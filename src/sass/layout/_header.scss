@@ -181,4 +181,26 @@
             transition: var(--header-nav-transition-active);
         }
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * HEADER MENU
+     * -------------------------------------------------------------------------
+     *
+     * Sets the styles for the header menu.
+     *
+     * ====================================================================== */
+
+    &-menu {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--header-menu-row-gap)
+        );
+
+        padding: var(--header-menu-p);
+        color: var(--header-menu-clr);
+        font-size: var(--header-menu-fs);
+        text-transform: var(--header-menu-case);
+        letter-spacing: var(--header-menu-tracking);
+    }
 }
