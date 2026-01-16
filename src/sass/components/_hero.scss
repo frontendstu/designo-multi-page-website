@@ -30,6 +30,11 @@
 @use '../abstracts/mixins' as mixin;
 
 .hero {
+    @include mixin.background(
+        $image: '/src/assets/images/shared/mobile/bg-pattern-design-pages-intro-mobile.svg',
+        $position: top right,
+        $size: auto);
+
     max-width: var(--hero-max-w);
     padding-block: var(--hero-py);
     border-radius: var(--hero-radius);
