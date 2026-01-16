@@ -1,0 +1,30 @@
+/* =============================================================================
+ *
+ * HERO
+ *
+ * Version: 1.0.0 (16/01/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The Hero partial defines the styles for the global hero component, which
+ * serves as the primary introductory section for a page or view.
+ *
+ * The Hero is responsible for establishing strong visual hierarchy by pairing
+ * headline content with a supporting message. It often acts as the first point
+ * of engagement for users, and it includes typography and background pattern
+ * imagery.
+ *
+ * Styles defined in this Hero partial focus on layout, spacing, responsive
+ * behaviour, and visual composition specific to the Hero pattern.
+ * Component-focused values such as typography and button usage are layered on
+ * top of global custom properties and foundations defined in the variables
+ * partial.
+ *
+ * Variants or alternate Hero formats (e.g., home page hero) are defined in
+ * this partial instead of the home page partial to preserve consistency and
+ * avoid duplication across the project.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
