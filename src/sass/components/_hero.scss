@@ -28,3 +28,30 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.hero {
+    max-width: var(--hero-max-w);
+    padding-block: var(--hero-py);
+    border-radius: var(--hero-radius);
+    background-color: var(--hero-bg);
+    color: var(--hero-clr);
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * The media query rules that alter the display of the Hero from the mobile
+ * layout (full width Hero display) to the tablet/desktop layout (container
+ * width display).
+ *
+ * ========================================================================== */
+
+/* ----- 768px */
+
+@media(min-width: 48em) {
+    .hero {
+        margin-inline: auto;
+    }
+}
