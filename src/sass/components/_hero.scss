@@ -38,6 +38,12 @@
     font-size: var(--hero-fs);
     text-align: var(--hero-text-align);
 
+    h2 {
+        font-size: var(--hero-h2-fs);
+        text-transform: var(--hero-h2-case);
+        letter-spacing: var(--hero-h2-tracking);
+    }
+
     /**
      * -------------------------------------------------------------------------
      * HERO INNER
