@@ -211,11 +211,11 @@
  * -----------------------------------------------------------------------------
  *
  * The media query rules that switch the header from the mobile layout (stacked
- * nav and toggle button) to the tablet layout (inline navigation without
- * toggle). Handles visibility, positioning, and spacing changes required for
- * desktop viewports.
+ * nav and toggle button) to the tablet/desktop layout (inline navigation
+ * without toggle). Handles visibility, positioning, and spacing changes
+ * required for desktop viewports.
  *
- * =============================================================================
+ * ========================================================================== */
 
 /* ----- 768px */
 @media(min-width: 48em) {
