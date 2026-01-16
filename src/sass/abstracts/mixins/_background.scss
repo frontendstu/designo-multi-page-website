@@ -1,0 +1,49 @@
+// =============================================================================
+//
+// BACKGROUND
+//
+// Version: 1.0.0 (16/01/2026)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The background mixin is a utility mixin that is used to apply
+// background-related styling in a consistent and expressive manner throughout
+// the project.
+//
+// The background mixin uses common background patterns (such as cover images,
+// positioning, repetition, and fallback colours) into a reusable API that
+// reduces verbosity and promotes predictable behaviour across components.
+// Defaults are chosen to align with typical design-system usage while allowing
+// contextual overrides when necessary.
+//
+// Validation logic may be included to surface warnings when background
+// properties are used in incomplete or unintended combinations, improving
+// developer experience without impacting runtime behaviour.
+//
+// =============================================================================
+
+@mixin background(
+    $image: null,
+    $color: null,
+    $size: cover,
+    $position: center,
+    $repeat: no-repeat
+) {
+    @if $color != null {
+        background-color: $color;
+    }
+
+    @if $image != null {
+        background-image: url(#{$image});
+        background-size: $size;
+        background-position: $position;
+        background-repeat: $repeat;
+    }
+
+    // Display a warning if size/position/repeat is used but no image source is
+    // defined
+    @if $image == null and ($size != null or $position != null or $repeat != null) {
+        @warn "⚠️ The background mixin was used with size/position/repeat, but no image source was defined";
+    }
+}
