@@ -35,6 +35,27 @@
     border-radius: var(--hero-radius);
     background-color: var(--hero-bg);
     color: var(--hero-clr);
+
+    /**
+     * -------------------------------------------------------------------------
+     * HERO INNER
+     * -------------------------------------------------------------------------
+     *
+     * The hero inner works as a container that is specific to the Hero
+     * component. It applies a max width along with a flexbox container is also
+     * applied to control the row gap between the heading and the content.
+     *
+     * ====================================================================== */
+
+    &-inner {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--hero-inner-row-gap)
+        );
+
+        max-width: var(--hero-inner-max-w);
+        margin-inline: auto;
+    }
 }
 
 /**
