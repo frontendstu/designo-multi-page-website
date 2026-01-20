@@ -28,3 +28,30 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.hero {
+    max-width: var(--hero-max-w);
+    padding-block: var(--hero-py);
+    border-radius: var(--hero-radius);
+    background-color: var(--hero-bg);
+    color: var(--hero-clr);
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the responsive styles for 768px, 1024px and 1280px+. I like to use
+ * em values for the media query (`@media`) min-width to ensure that font sizes
+ * are correctly displayed based on the zoom level instead of staying static
+ * when the page is either zoomed in or out.
+ *
+ * ========================================================================== */
+
+/* ---- 768px */
+@media(min-width: 48em) {
+    .hero {
+        margin-inline: auto;
+    }
+}

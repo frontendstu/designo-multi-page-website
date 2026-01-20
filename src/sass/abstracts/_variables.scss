@@ -142,6 +142,13 @@
     --btn-light-clr-active: var(--btn-light-clr);
     --btn-light-outline-clr: var(--btn-light-bg-active);
 
+    /* ----- Hero */
+    --hero-max-w: 100%;
+    --hero-py: 6.5625rem;
+    --hero-radius: 0;
+    --hero-bg: var(--clr-branding);
+    --hero-clr: var(--clr-neutral-100);
+
 
     /* ---------- MEDIA QUERIES */
 
@@ -159,11 +166,17 @@
         --header-menu-col-gap: 2.625rem;
         --header-menu-clr: var(--clr-neutral-800);
         --header-menu-fs: var(--fs-100);
+
+        --hero-max-w: var(--container-max-w);
+        --hero-py: 4rem;
+        --hero-radius: 15px;
     }
 
     /* 1024px */
     @media(min-width: 64em) {
         --container-max-w: 56.25rem;
+
+        --hero-max-w: var(--container-max-w);
     }
 
     /* 1280px */
