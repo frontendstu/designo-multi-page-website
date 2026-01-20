@@ -144,6 +144,7 @@
     /* ----- Hero */
     --hero-max-w: 100%;
     --hero-py: 6.5625rem;
+    --hero-mt: 0;
     --hero-radius: 0;
     --hero-bg: var(--clr-branding);
     --hero-clr: var(--clr-neutral-100);
@@ -172,6 +173,7 @@
         --header-menu-clr: var(--clr-neutral-800);
         --header-menu-fs: var(--fs-100);
 
+        --hero-mt: 1.5rem;
         --hero-max-w: var(--container-max-w);
         --hero-py: 4rem;
         --hero-radius: 15px;
