@@ -1,0 +1,37 @@
+// =============================================================================
+//
+// MIXIN: BACKGROUND
+//
+// Version: 1.0.0 (21/01/2026)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// The background utility mixin is used to apply or setup background-related
+// styling in a consistent and expressive manner throughout the project.
+//
+// This mixin use common background patterns (such as cover images,
+// positioning, repetition and fallback colours) into a reusable API that
+// reduces verbosity and promotes predictable behaviour across components.
+// Defaults are chosen to align with typical design-system usage while allowing
+// contextual overrides when necessary.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+//
+// @param {String | Null}   $img        - URL path to the background image
+// @param {String | Null}   $colour     - Optional background colour
+// @param {String | Null}   $size       - Background sizing method
+// @param {String | Null}   $position   - Background position
+// @param {String | Null}   $repeat     - Background repeat behaviour
+//
+// -----------------------------------------------------------------------------
+//
+// Usage:
+//
+// .hero {
+//     @include mixin.background($img: '/img/hero.png', $size: cover);
+// }
+//
+// =============================================================================
