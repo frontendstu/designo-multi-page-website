@@ -149,6 +149,9 @@
     --hero-bg: var(--clr-branding);
     --hero-clr: var(--clr-neutral-100);
 
+    --hero-inner-max-w: 100%;
+    --hero-inner-px: 0.25rem;
+
 
     /* ---------- MEDIA QUERIES */
 
@@ -170,17 +173,24 @@
         --hero-max-w: var(--container-max-w);
         --hero-py: 4rem;
         --hero-radius: 15px;
+
+        --hero-inner-max-w: 24.875rem;
+        --hero-inner-px: 0;
     }
 
     /* 1024px */
     @media(min-width: 64em) {
         --container-max-w: 56.25rem;
 
+        /* HERO */
         --hero-max-w: var(--container-max-w);
     }
 
     /* 1280px */
     @media(min-width: 80em) {
         --container-max-w: 69.375rem;
+
+        /* HERO */
+        --hero-inner-max-w: 25rem;
     }
 }

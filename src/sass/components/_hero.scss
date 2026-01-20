@@ -35,6 +35,28 @@
     border-radius: var(--hero-radius);
     background-color: var(--hero-bg);
     color: var(--hero-clr);
+
+    /**
+     * -------------------------------------------------------------------------
+     * HERO INNER
+     * -------------------------------------------------------------------------
+     *
+     * The hero inner works as a container specifically for the content that is
+     * held within the hero. It defines the inline-padding and defines the
+     * global hero's flexbox layout. The hero inner also defines the typography
+     * styles to display the hero's heading a introductory content along with
+     * any buttons that may be required.
+     *
+     * ====================================================================== */
+
+    &-inner {
+        @include mixin.flex($direction: column, $row-gap: 1.5rem);
+
+        max-width: var(--hero-inner-max-w);
+        padding-inline: var(--hero-inner-px);
+        margin-inline: auto;
+    }
+
 }
 
 /**
