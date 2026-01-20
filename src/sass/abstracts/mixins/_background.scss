@@ -35,3 +35,26 @@
 // }
 //
 // =============================================================================
+
+@mixin background(
+    $img: null,
+    $color: null,
+    $position: null,
+    $repeat: no-repeat
+) {
+    @if $color != null {
+        background-color: $color;
+    }
+
+    @if $img != null {
+        background-image: url(#{$img});
+    }
+
+    @if $position != null {
+        background-position: $position;
+    }
+
+    @if $repeat != null {
+        background-repeat: $repeat;
+    }
+}
