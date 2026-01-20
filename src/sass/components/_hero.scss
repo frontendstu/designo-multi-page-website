@@ -50,11 +50,20 @@
      * ====================================================================== */
 
     &-inner {
-        @include mixin.flex($direction: column, $row-gap: 1.5rem);
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--hero-inner-row-gap)
+        );
 
         max-width: var(--hero-inner-max-w);
         padding-inline: var(--hero-inner-px);
         margin-inline: auto;
+        font-size: var(--hero-inner-fs);
+        text-align: center;
+
+        h2 {
+            font-size: var(--hero-inner-h2-fs);
+        }
     }
 
 }

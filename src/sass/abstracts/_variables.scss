@@ -148,8 +148,11 @@
     --hero-bg: var(--clr-branding);
     --hero-clr: var(--clr-neutral-100);
 
-    --hero-inner-max-w: 100%;
+    --hero-inner-max-w: 20.875rem;
+    --hero-inner-row-gap: 1.5rem;
     --hero-inner-px: 0.25rem;
+    --hero-inner-fs: var(--fs-200);
+    --hero-inner-h2-fs: var(--fs-700);
 
 
     /* ---------- MEDIA QUERIES */
@@ -175,6 +178,8 @@
 
         --hero-inner-max-w: 24.875rem;
         --hero-inner-px: 0;
+        --hero-inner-fs: var(--fs-300);
+        --hero-inner-h2-fs: var(--fs-900);
     }
 
     /* 1024px */
