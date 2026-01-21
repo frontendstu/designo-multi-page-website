@@ -40,6 +40,7 @@
     $img: null,
     $color: null,
     $position: null,
+    $size: cover,
     $repeat: no-repeat
 ) {
     @if $color != null {
@@ -52,6 +53,10 @@
 
     @if $position != null {
         background-position: $position;
+    }
+
+    @if $size != null {
+        background-size: $size;
     }
 
     @if $repeat != null {
