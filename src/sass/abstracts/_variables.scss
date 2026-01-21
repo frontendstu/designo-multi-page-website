@@ -155,6 +155,12 @@
     --hero-inner-fs: var(--fs-200);
     --hero-inner-h2-fs: var(--fs-700);
 
+    --hero-home-bg-pos: left 7.25rem;
+    --hero-home-bg-size: cover;
+    --hero-home-img-w: 17.5625rem;
+    --hero-home-img-h: 24rem;
+    --hero-home-img-mt: 2.5rem;
+
 
     /* ---------- MEDIA QUERIES */
 
@@ -182,6 +188,14 @@
         --hero-inner-px: 0;
         --hero-inner-fs: var(--fs-300);
         --hero-inner-h2-fs: var(--fs-900);
+
+
+        --hero-home-bg-pos: 10rem 6.75rem;
+        --hero-home-bg-size: contain;
+        --hero-home-img-h: 24.375rem;
+        --hero-home-inner-max-w: 32rem;
+        --hero-home-inner-heading-leading: 1;
+        --hero-home-content-max-w: 26rem;
     }
 
     /* 1024px */
@@ -190,6 +204,9 @@
 
         /* HERO */
         --hero-max-w: var(--container-max-w);
+        --hero-home-img-h: 26.375rem;
+        --hero-home-bg-pos: top right;
+        --hero-home-img-h: 30rem;
     }
 
     /* 1280px */

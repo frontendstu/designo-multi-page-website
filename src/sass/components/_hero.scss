@@ -67,6 +67,52 @@
         }
     }
 
+    /**
+     * -------------------------------------------------------------------------
+     * HERO HOME
+     * -------------------------------------------------------------------------
+     *
+     * Defines the home page variant of the global Hero components
+     *
+     * This variant applies patterned background as a centred, vertically
+     * stacked layout by default, with responsive adjustments that shift
+     * towards a more traditional left-aligned content layout at larger
+     * breakpoints.
+     *
+     * The background image, positioning, and sizing are token-driven via CSS
+     * custom properties, allowing design values to be updated without
+     * modifying component logic. Image dimensions and spacing are also
+     * controlled via custom properties to ensure consistent scaling across
+     * viewports.
+     *
+     * ===================================================================== */
+
+    &-home {
+        @include mixin.background(
+            $img: '/src/assets/images/home/desktop/bg-pattern-hero-home.svg',
+            $size: var(--hero-home-bg-size),
+            $position: var(--hero-home-bg-pos)
+        );
+
+        padding-bottom: 0;
+
+        img {
+            @include mixin.size(
+                $width: var(--hero-home-img-w),
+                $height: var(--hero-home-img-h)
+            );
+
+            margin-top: var(--hero-home-img-mt);
+            margin-inline: auto;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .btn {
+            margin-inline: auto;
+        }
+    }
+
 }
 
 /**
@@ -85,5 +131,35 @@
 @media(min-width: 48em) {
     .hero {
         margin-inline: auto;
+
+        &-home {
+            .hero-inner {
+                max-width: var(--hero-home-inner-max-w);
+                text-align: left;
+
+                h2 {
+                    line-height: var(--hero-home-inner-heading-leading);
+                }
+
+                p {
+                    max-width: var(--hero-home-content-max-w);
+                }
+
+                .btn {
+                    margin-right: auto;
+                    margin-inline: unset;
+                }
+            }
+
+        }
+    }
+}
+
+/* ----- 1024px */
+@media(min-width: 64em) {
+    .hero {
+        &-home {
+            @include mixin.flex($justify: center, $align-items: center);
+        }
     }
 }
