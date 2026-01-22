@@ -1,0 +1,25 @@
+/* =============================================================================
+ *
+ * HOME
+ *
+ * Version: 1.0.0 (22/01/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The home partial defines the styles specific to the Home page, these styles
+ * include the portfolio navigation grid and features section.
+ *
+ * The portfolio navigation grid provides quick access to the portfolio
+ * categories and is styled to maintain strong visual hierarchy and consistent
+ * card presentation across breakpoints. The style features an image with the
+ * portfolio category name overlayed on top of the image.
+ *
+ * Styles defined here are context-specific to the Home page and should not
+ * contain any global component styles. Shared patterns (e.g. cards, buttons,
+ * grids, or layout primitives) should be maintained in their respective
+ * location support reuse across the design system.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
