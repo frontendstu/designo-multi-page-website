@@ -161,6 +161,35 @@
     --hero-home-img-h: 24rem;
     --hero-home-img-mt: 2.5rem;
 
+    /* ---------- PAGES */
+
+    /* ----- Home */
+
+    /** Portfolio Nav **/
+    --portfolio-nav-row-gap: 1.5rem;
+    --portfolio-nav-py: 7.5rem;
+
+    --portfolio-nav-item-radius: 15px;
+    --portfolio-nav-item-clr: var(--clr-neutral-100);
+    --portfolio-nav-item-fs: var(--fs-200);
+    --portfolio-nav-item-text-align: center;
+    --portfolio-nav-item-transition: background-color 200ms linear;
+
+    --portfolio-nav-item-overlay-bg: rgba(0, 0, 0, 0.5);
+    --portfolio-nav-item-overlay-bg-active: hsl(11 73% 66% / 0.8);
+
+    --portfolio-nav-item-heading-fs: var(--fs-600);
+    --portfolio-nav-item-heading-case: uppercase;
+    --portfolio-nav-item-heading-tracking: 1.4px;
+
+    --portfolio-nav-item-link-mt: 0.75rem;
+    --portfolio-nav-item-link-fs: var(--fs-200);
+    --portfolio-nav-item-link-case: uppercase;
+    --portfolio-nav-item-link-tracking: 5px;
+
+    --portfolio-nav-item-link-icn-w: 0.25rem;
+    --portfolio-nav-item-link-icn-h: 0.5rem;
+    --portfolio-nav-item-link-icn-ml: 0.9375rem;
 
     /* ---------- MEDIA QUERIES */
 

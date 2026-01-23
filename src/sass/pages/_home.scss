@@ -23,3 +23,107 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * -----------------------------------------------------------------------------
+ * PORTFOLIO NAVIGATION
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the styles for the Portfolio Navigation component, which presents
+ * interactive category cards that link directly into the core portfolio views.
+ *
+ * Each card consists of a background image, a tinted overlay, and centered
+ * content containing both a heading and a call-to-action link to the specific
+ * portfolio category. The overlay tint strengthens visual hierarchy and shifts
+ * into an active brand state on hover to reinforce interactivity.
+ *
+ * Layout is handled via CSS grid, enabling straightforward stacking on smaller
+ * viewports while allowing for more complex grid compositions at larger
+ * break-points. All sizing, spacing and typographic values are driven by CSS
+ * custom properties to support a flexible design system and easy theming.
+ *
+ * The call-to-action link includes a decorative arrow rendered via
+ * pseudo-element, keeping the markup clean and ensuring that decorative glyphs
+ * do not interfere with the accessibility tree. Shared behaviours such as
+ * hover and focus treatments are applied through utility mixins to maintain
+ * consistency across components.
+ *
+ * ========================================================================== */
+
+.portfolio-nav {
+    display: grid;
+    row-gap: var(--portfolio-nav-row-gap);
+    padding-block: var(--portfolio-nav-py);
+
+    &-item {
+        position: relative;
+        display: block;
+        border-radius: var(--portfolio-nav-item-radius);
+        overflow: hidden;
+        text-align: var(--portfolio-nav-item-text-align);
+        cursor: pointer;
+
+        &-overlay {
+            position: absolute;
+            inset: 0;
+            transition: var(--portfolio-nav-item-transition);
+            background-color: var(--portfolio-nav-item-overlay-bg);
+        }
+
+        &:hover &-overlay {
+            background-color: var(--portfolio-nav-item-overlay-bg-active);
+        }
+
+        &-content {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-content: center;
+            color: var(--portfolio-nav-item-clr);
+            font-size: var(--portfolio-nav-item-fs);
+
+            h3 {
+                font-size: var(--portfolio-nav-item-heading-fs);
+                text-transform: var(--portfolio-nav-item-heading-case);
+                letter-spacing: var(--portfolio-nav-item-heading-tracking);
+            }
+
+            a {
+                position: relative;
+                margin-top: var(--portfolio-nav-item-link-mt);
+                font-size: var(--portfolio-nav-item-link-fs);
+                text-transform: var(--portfolio-nav-item-link-case);
+                letter-spacing: var(--portfolio-nav-item-link-tracking);
+
+                &:after {
+                    @include mixin.size(
+                        $width: var(--portfolio-nav-item-link-icn-w),
+                        $height: var(--portfolio-nav-item-link-icn-h)
+                    );
+
+                    @include mixin.background(
+                        $img: '/src/assets/images/shared/desktop/icon-right-arrow.svg',
+                        $repeat: no-repeat,
+                        $size: cover,
+                        $position: center
+                    );
+
+                    content: '';
+                    display: inline-block;
+                    margin-left: var(--portfolio-nav-item-link-icn-ml);
+                }
+
+                @include mixin.state-selector {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        img {
+            @include mixin.size($width: 100%, $height: 100%);
+
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
