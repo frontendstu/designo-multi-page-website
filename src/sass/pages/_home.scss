@@ -127,21 +127,23 @@
             display: block;
         }
     }
+}
 
-    /**
-     * -------------------------------------------------------------------------
-     * MEDIA QUERIES
-     * -------------------------------------------------------------------------
-     *
-     * Defines the styles for different breakpoints. In this project these
-     * breakpoints are 768px (48em), 1024px (64em) and 1280px (80em). Media
-     * queries use em values to ensure there are no issues with fixed font
-     * sizing when the page is zoomed in or out.
-     *
-     * ====================================================================== */
+/**
+ * -------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -------------------------------------------------------------------------
+ *
+ * Defines the styles for different breakpoints. In this project these
+ * breakpoints are 768px (48em), 1024px (64em) and 1280px (80em). Media
+ * queries use em values to ensure there are no issues with fixed font
+ * sizing when the page is zoomed in or out.
+ *
+ * ====================================================================== */
 
-    /* ----- 1280px */
-    @media(min-width: 80em) {
+/* ----- 1280px */
+@media(min-width: 80em) {
+    .portfolio-nav {
         grid-template-columns: 1fr 1fr;
 
         &-item {
