@@ -167,6 +167,7 @@
 
     /** Portfolio Nav **/
     --portfolio-nav-row-gap: 1.5rem;
+    --portfolio-nav-col-gap: 0;
     --portfolio-nav-py: 7.5rem;
 
     --portfolio-nav-item-radius: 15px;
@@ -244,5 +245,9 @@
 
         /* HERO */
         --hero-inner-max-w: 25rem;
+
+        /* PORTFOLIO NAV */
+        --portfolio-nav-row-gap: 1.5rem;
+        --portfolio-nav-col-gap: 1.875rem;
     }
 }

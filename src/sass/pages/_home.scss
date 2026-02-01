@@ -53,6 +53,7 @@
 .portfolio-nav {
     display: grid;
     row-gap: var(--portfolio-nav-row-gap);
+    column-gap: var(--portfolio-nav-col-gap);
     padding-block: var(--portfolio-nav-py);
 
     &-item {
@@ -124,6 +125,29 @@
 
             object-fit: cover;
             display: block;
+        }
+    }
+
+    /**
+     * -------------------------------------------------------------------------
+     * MEDIA QUERIES
+     * -------------------------------------------------------------------------
+     *
+     * Defines the styles for different breakpoints. In this project these
+     * breakpoints are 768px (48em), 1024px (64em) and 1280px (80em). Media
+     * queries use em values to ensure there are no issues with fixed font
+     * sizing when the page is zoomed in or out.
+     *
+     * ====================================================================== */
+
+    /* ----- 1280px */
+    @media(min-width: 80em) {
+        grid-template-columns: 1fr 1fr;
+
+        &-item {
+            &:first-child {
+                grid-row: span 2
+            }
         }
     }
 }
