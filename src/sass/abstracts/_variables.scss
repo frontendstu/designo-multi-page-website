@@ -196,11 +196,14 @@
 
     /* 768px */
     @media(min-width: 48em) {
+        /* Headings */
         --heading-h1-fs: var(--fs-900);
         --heading-h2-fs: var(--fs-800);
 
+        /* Container */
         --container-max-w: 43.125rem;
 
+        /* Header */
         --header-mt: 2rem;
         --header-inner-py: 2rem;
         --header-nav-bg: transparent;
@@ -209,6 +212,7 @@
         --header-menu-clr: var(--clr-neutral-800);
         --header-menu-fs: var(--fs-100);
 
+        /* Hero */
         --hero-mt: 1.5rem;
         --hero-max-w: var(--container-max-w);
         --hero-py: 4rem;
@@ -220,6 +224,7 @@
         --hero-inner-h2-fs: var(--fs-900);
 
 
+        /* Hero Home */
         --hero-home-bg-pos: 10rem 6.75rem;
         --hero-home-bg-size: contain;
         --hero-home-img-h: 24.375rem;
@@ -230,9 +235,10 @@
 
     /* 1024px */
     @media(min-width: 64em) {
+        /* Container */
         --container-max-w: 56.25rem;
 
-        /* HERO */
+        /* Hero */
         --hero-max-w: var(--container-max-w);
         --hero-home-img-h: 26.375rem;
         --hero-home-bg-pos: top right;
@@ -241,19 +247,20 @@
 
     /* 1280px */
     @media(min-width: 80em) {
+        /* Container */
         --container-max-w: 69.375rem;
 
-        /* HERO */
+        /* Hero */
         --hero-inner-max-w: 25rem;
 
-        /* PORTFOLIO NAV */
+        /* Portfolio Nav */
         --portfolio-nav-row-gap: 1.5rem;
         --portfolio-nav-col-gap: 1.875rem;
     }
 
     /* 1440px */
     @media(min-width: 90em) {
-        /* PORTFOLIO NAV */
+        /* Portfolio Nav */
         --porfolio-nav-py: 10rem;
     }
 }
