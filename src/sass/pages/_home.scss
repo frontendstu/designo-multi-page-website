@@ -130,6 +130,62 @@
 }
 
 /**
+ * -----------------------------------------------------------------------------
+ * FEATURES
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the styles for the Features component, which presents a concise
+ * series of informational and value-driven items intended to highlight key
+ * services, strengths or differentiating attributes.
+ *
+ * The Features component uses a grid based layout to control vertical rhythm
+ * and spacing between feature items, allowing the section to stack cleanly on
+ * smaller viewports while remaining adaptable to multi-column compositions at
+ * larger breakpoints. All spacing and typography values are design-token
+ * driven via CSS custom properties to support consistency and easy theming
+ * across the design system.
+ *
+ * Each feature item pairs an illustrative icon with a heading and supporting
+ * text. Images are centered to maintain visual balance, while headings use
+ * controlled casing and tracking to reinforce hierarchy and alignment with
+ * global typography rules.
+ *
+ * A decorative background pattern is applied to the icon and are handled via
+ * the background utility mixin, keeping markup clean and ensuring that
+ * non-semantic visuals remain seperate from content structure and
+ * accessibility concerns.
+ *
+ * ========================================================================== */
+
+.features {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: var(--features-row-gap);
+    column-gap: var(--features-col-gap);
+    padding-bottom: var(--features-pb);
+    text-align: var(--features-text-align);
+
+    &-item {
+        h3 {
+            margin-block: var(--features-item-heading-my);
+            font-size: var(--features-item-heading-fs);
+            text-transform: var(--features-item-heading-case);
+            letter-spacing: var(--features-item-heading-tracking);
+        }
+
+        img {
+            margin-inline: auto;
+        }
+    }
+
+    img {
+        @include mixin.background(
+            $img: '/src/assets/images/shared/desktop/bg-pattern-small-circle.svg'
+        );
+    }
+}
+
+/**
  * -------------------------------------------------------------------------
  * MEDIA QUERIES
  * -------------------------------------------------------------------------
@@ -141,8 +197,28 @@
  *
  * ====================================================================== */
 
+/* ----- 768px */
+@media(min-width: 48em) {
+    /**
+     * Features
+     * ---------------------------------------------------------------------- */
+
+    .features {
+        &-item {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
 /* ----- 1280px */
 @media(min-width: 80em) {
+    /**
+     * Portfolio Navigation
+     * ---------------------------------------------------------------------- */
+
     .portfolio-nav {
         grid-template-columns: 1fr 1fr;
 
@@ -150,6 +226,18 @@
             &:first-child {
                 grid-row: span 2
             }
+        }
+    }
+
+    /**
+     * Features
+     * ---------------------------------------------------------------------- */
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+
+        &-item {
+            display: unset;
         }
     }
 }
