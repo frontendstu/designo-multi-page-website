@@ -250,4 +250,10 @@
         --portfolio-nav-row-gap: 1.5rem;
         --portfolio-nav-col-gap: 1.875rem;
     }
+
+    /* 1440px */
+    @media(min-width: 90em) {
+        /* PORTFOLIO NAV */
+        --porfolio-nav-py: 10rem;
+    }
 }
