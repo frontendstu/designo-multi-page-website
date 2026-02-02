@@ -1,0 +1,31 @@
+/* =============================================================================
+ *
+ * CALL TO ACTION
+ *
+ * Version: 1.0.0 (02/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The Call to Action (CTA) partial defines the styles for the global call to
+ * action component, which is used to prompt users toward high-value
+ * interaction such as contacting the business.
+ *
+ * The CTA component is designed to stand out from surrounding content through
+ * controlled contrast, spacing, and clear typographic hierarchy which still
+ * aligning with the overall design system. Layout, padding and responsive
+ * behaviour are managed here, while colour and typography values are driven by
+ * global tokens to maintain consistency across the interface.
+ *
+ * The file should contain only CTA-specific styling. Shared button logic,
+ * layout primatives, and typographic foundations should remain within their
+ * respective global partials to preserver seperation of concerns and encourage
+ * reuse.
+ *
+ * Variants or contextual adaptations (e.g., light, dark, or inline CTA
+ * formats) should be defined within this partial to ensure predictable
+ * behaviour and avoid duplication across views.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
