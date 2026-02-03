@@ -161,6 +161,20 @@
     --hero-home-img-h: 24rem;
     --hero-home-img-mt: 2.5rem;
 
+    /* ----- Call To Action */
+    --cta-bg: var(--clr-branding);
+    --cta-row-gap: 2rem;
+    --cta-p: 4rem 1.5rem;
+    --cta-radius: 15px;
+    --cta-clr: var(--clr-neutral-100);
+    --cta-text-align: center;
+
+    --cta-content-max-w: 100%;
+    --cta-content-row-gap: 1.25rem;
+
+    --cta-heading-max-w: 100%;
+    --cta-heading-fs: var(--fs-700);
+
     /* ---------- PAGES */
 
     /* ----- Home */
@@ -243,6 +257,12 @@
         --hero-home-inner-heading-leading: 1;
         --hero-home-content-max-w: 26rem;
 
+        /* Call to Action */
+        --cta-content-max-w: 26.8125rem;
+
+        --cta-heading-max-w: 16.375rem;
+        --cta-heading-fs: var(--fs-800);
+
         /* Features */
         --features-pb: 4.1875rem;
         --features-text-align: left;
@@ -259,6 +279,12 @@
         --hero-home-img-h: 26.375rem;
         --hero-home-bg-pos: top right;
         --hero-home-img-h: 30rem;
+
+        /* Call to Action */
+        --cta-p: 4rem;
+        --cta-text-align: left;
+
+        --cta-content-max-w: 28.6875rem;
     }
 
     /* 1280px */
@@ -268,6 +294,13 @@
 
         /* Hero */
         --hero-inner-max-w: 25rem;
+
+        /* Call to Action */
+        --cta-p: 4.5rem 5.9375rem;
+
+        --cta-heading-max-w: 16.75rem;
+
+        --cta-content-max-w: 26.9375rem;
 
         /* Portfolio Nav */
         --portfolio-nav-row-gap: 1.5rem;

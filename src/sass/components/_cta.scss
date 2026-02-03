@@ -29,3 +29,62 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.cta {
+    @include mixin.background(
+        $img: '/src/assets/images/shared/desktop/bg-pattern-three-circles.svg',
+        $color: var(--cta-bg),
+        $size: cover
+    );
+
+    @include mixin.flex($direction: column, $row-gap: var(--cta-row-gap));
+
+    padding: var(--cta-p);
+    border-radius: var(--cta-radius);
+    color: var(--cta-clr);
+    text-align: var(--cta-text-align);
+
+    &-content {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--cta-content-row-gap)
+        );
+
+        max-width: var(--cta-content-max-w);
+        margin-inline: auto;
+    }
+
+    h3 {
+        max-width: var(--cta-heading-max-width);
+        margin-inline: auto;
+        font-size: var(--cta-heading-fs);
+    }
+
+    .btn {
+        margin-inline: auto;
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the responsive styles for 768px, 1024px and 1280px+. I like to use
+ * em values for the media query (`@media`) min-width to ensure that font sizes
+ * are correctly displayed based on the zoom level instead of staying static
+ * when the page is either zoomed in or out.
+ *
+ * ========================================================================== */
+
+/* ----- 1024px */
+@media(min-width: 64em) {
+    .cta {
+        flex-direction: row;
+        align-items: center;
+
+        &-content {
+            margin-inline: 0 auto;
+        }
+    }
+}
