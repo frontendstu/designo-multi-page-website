@@ -32,9 +32,10 @@
 
 .cta {
     @include mixin.background(
-        $img: '/src/assets/images/shared/desktop/bg-pattern-three-circles.svg',
+        $img: '/src/assets/images/shared/desktop/bg-pattern-call-to-action.svg',
+        $position: var(--cta-bg-pos),
         $color: var(--cta-bg),
-        $size: cover
+        $size: var(--cta-bg-size)
     );
 
     @include mixin.flex($direction: column, $row-gap: var(--cta-row-gap));
