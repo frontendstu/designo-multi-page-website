@@ -1,0 +1,25 @@
+/* =============================================================================
+ *
+ * FOOTER
+ *
+ * Version: 1.0.0 (04/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the global footer, including its structual layout, positioning and
+ * interaction-related styles.
+ *
+ * The footer provides persistent access to core site navigation, branding,
+ * contact information and social media contacts. The footer is responsible for
+ * maintaining clear usability across varying screen sizes and devices types.
+ * Styles defined here ensure that the footer remains visually consistent,
+ * accessible and functionally predictable throughout the site experience.
+ *
+ * Footer styles are intended to remain global and non-contextual. Page-level
+ * overrides should be avoided unless strictly necessary, and implemented with
+ * care to maintain predictable behaviour across the design system.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
