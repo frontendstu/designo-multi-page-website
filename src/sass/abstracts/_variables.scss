@@ -119,6 +119,7 @@
     --footer-bg: var(--clr-neutral-900);
     --footer-clr: hsla(0 0% 100% / 0.5);
     --footer-text-align: center;
+    --footer-col-row-gap: 2.5rem;
 
     --footer-inner-max-w: var(--container-max-w);
     --footer-inner-row-gap: 2.5rem;
@@ -271,6 +272,10 @@
         --header-menu-clr: var(--clr-neutral-800);
         --header-menu-fs: var(--fs-100);
 
+        /* Footer */
+        --footer-col-border-b: 1px solid hsla(0 0% 100% / 0.1);
+        --footer-nav-col-gap: 1.625rem;
+
         /* Hero */
         --hero-mt: 1.5rem;
         --hero-max-w: var(--container-max-w);
@@ -307,6 +312,10 @@
     @media(min-width: 64em) {
         /* Container */
         --container-max-w: 56.25rem;
+
+        /* Footer */
+        --footer-nav-col-gap: 2.625rem;
+        --footer-text-align: left;
 
         /* Hero */
         --hero-max-w: var(--container-max-w);

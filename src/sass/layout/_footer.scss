@@ -32,6 +32,10 @@
     text-align: var(--footer-text-align);
     color: var(--footer-clr);
 
+    .col-3-md {
+        row-gap: var(--footer-col-row-gap);
+    }
+
     /**
      * -------------------------------------------------------------------------
      * FOOTER INNER
@@ -182,5 +186,59 @@
         margin-top: var(--footer-attribution-mt);
         opacity: var(--footer-attribution-opacity);
         font-size: var(--footer-attribution-fs);
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * The media query rules that switch the footer from the mobile layout (stacked
+ * pattern) to the tablet pattern that are used to work alongside the
+ * `.col-2-md` and `.col-3-md` grid utility classes. These media queries are
+ * mainly design styling and don't alter the structure of the grid.
+ *
+ * ========================================================================== */
+
+/* ----- 768px */
+@media(min-width: 48em) {
+    .footer {
+        .col-2-md {
+            border-bottom: var(--footer-col-border-b);
+        }
+
+        .col-3-md {
+            place-items: start;
+        }
+
+        &-branding {
+            border-bottom: none;
+
+            img {
+                margin-inline: 0;
+            }
+        }
+
+        &-nav {
+            flex-direction: row;
+            justify-content: flex-end;
+            column-gap: var(--footer-nav-col-gap);
+            margin-top: 0;
+        }
+
+        &-socials {
+            margin-top: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+/* ----- 1024px */
+@media(min-width: 64em) {
+    .footer {
+        &-nav {
+            column-gap: 2.625rem;
+        }
     }
 }
