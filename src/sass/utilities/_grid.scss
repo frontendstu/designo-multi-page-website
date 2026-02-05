@@ -25,3 +25,23 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * -----------------------------------------------------------------------------
+ * 2 COLUMN ON MEDIUM
+ * -----------------------------------------------------------------------------
+ *
+ * The `.col-2-md` utility class is a grid utility class that begins as a
+ * single column layout, but once the viewport is 768px or higher it will
+ * change to a two column layout.
+ *
+ * ========================================================================== */
+
+.col-2-md {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @media(min-width: 48em) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
