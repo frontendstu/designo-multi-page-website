@@ -1,0 +1,27 @@
+/* =============================================================================
+ * GRID
+ *
+ * Version: 1.0.0 (05/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The grid utility partials define reusable grid-based utility classes used to
+ * establish layout structure across the project. These utilities provide
+ * lightweight, non-component-specific helpers for creating common grid
+ * patterns such as equal columns, responsive stacks, and controlled spacing.
+ *
+ * Grid utilities are intended to be compostable and context-agnostic, allowing
+ * layouts to be constructed quickly without introducing additional component
+ * styles or bespoke CSS. Spacing, column counts, and alignment behaviour are
+ * typically driven by CSS custom properties or predefined modifers to ensure
+ * consistency with the overall design system.
+ *
+ * These grid utility classes should remain purely structual and must not
+ * contain visual or thematic styling. Component-specific layouts belong within
+ * their respective partials, while these utilities act as foundational
+ * primitives that can be safely reused throughout the project.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
