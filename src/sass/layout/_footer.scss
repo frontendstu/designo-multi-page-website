@@ -56,6 +56,23 @@
 
     /**
      * -------------------------------------------------------------------------
+     * FOOTER GRID
+     * -------------------------------------------------------------------------
+     *
+     * The footer grid applies a grid layout that can be used when a two column
+     * layout is required on high breakpoints. On the base breakpoint a single
+     * grid column is defined.
+     *
+     * ====================================================================== */
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+    /**
+     * -------------------------------------------------------------------------
      * FOOTER BRANDING
      * -------------------------------------------------------------------------
      *
