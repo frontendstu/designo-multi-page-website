@@ -126,6 +126,14 @@
     --footer-branding-border-b: 1px solid hsla(0 0% 100% / 0.1);
     --footer-branding-img-w: 12.625rem;
 
+    --footer-nav-row-gap: 2rem;
+    --footer-nav-clr: var(--clr-neutral-100);
+    --footer-nav-clr-active: hsla(0 0% 100% / 0.45);
+    --footer-nav-transition: color 150ms ease-in-out;
+    --footer-nav-fs: var(--fs-100);
+    --footer-nav-case: uppercase;
+    --footer-nav-tracking: 2px;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */

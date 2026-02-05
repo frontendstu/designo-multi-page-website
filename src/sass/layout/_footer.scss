@@ -78,4 +78,38 @@
         padding-bottom: var(--footer-branding-pb);
         border-bottom: var(--footer-branding-border-b);
     }
+
+
+    /**
+     * -------------------------------------------------------------------------
+     * FOOTER NAVIGATION
+     * -------------------------------------------------------------------------
+     *
+     * The footer navigation is a basic navigation that features the same links
+     * as the header navigation, but they are presented in a more simplistic
+     * form. The navigation menu items display stacked on the base breakpoint
+     * and changes to a horizontal display.
+     *
+     * ====================================================================== */
+
+    &-nav {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--footer-nav-row-gap)
+        );
+
+        color: var(--footer-nav-clr);
+        font-size: var(--footer-nav-fs);
+        text-transform: var(--footer-nav-case);
+        letter-spacing: var(--footer-nav-tracking);
+
+        a {
+            border-bottom: none;
+            transition: var(--footer-nav-transition);
+
+            @include mixin.state-selector() {
+                color: var(--footer-nav-clr-active)
+            }
+        }
+    }
 }
