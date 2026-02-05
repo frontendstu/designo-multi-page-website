@@ -113,6 +113,12 @@
     --header-overlay-transition: opacity 200ms ease-out, visibility 0ms linear 200ms;
     --header-overlay-open-transition: opacity 200ms ease-out, visibility 0s;
 
+    /* --- Footer */
+    --footer-py: 15.75rem 8rem;
+    --footer-mt: -11.8125rem;
+    --footer-bg: var(--clr-neutral-900);
+    --footer-text-align: center;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */

@@ -23,3 +23,12 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.footer {
+    position: relative;
+    padding-block: var(--footer-py);
+    margin-top: var(--footer-mt);
+    z-index: -1;
+    background-color: var(--footer-bg);
+    text-align: var(--footer-text-align);
+}
