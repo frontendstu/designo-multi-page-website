@@ -134,6 +134,11 @@
     --footer-nav-case: uppercase;
     --footer-nav-tracking: 2px;
 
+    --footer-socials-col-gap: 1rem;
+    --footer-socials-icn-fill: var(--clr-branding);
+    --footer-socials-icn-fill-active: var(--clr-branding-light);
+    --footer-socials-icn-transition: fill 150ms ease-in-out;
+
     /* ---------- COMPONENTS */
 
     /* --- Buttons */
