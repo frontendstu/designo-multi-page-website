@@ -37,6 +37,10 @@ body {
     line-height: var(--copy-leading);
 }
 
+strong {
+    font-weight: var(--fw-bld);
+}
+
 // -----------------------------------------------------------------------------
 // Loop through heading levels 1-6 to apply the global styles for headings
 // -----------------------------------------------------------------------------
