@@ -11,7 +11,7 @@
 // module directive for page specific styles:
 //
 // - home.scss:         Sets the styles for the homepage
-// - portfolio.scss:    Sets the styles for portfolio pages
+// - web-design.scss    Sets the styles for the web design page
 // - about.scss:        Sets the styles for the about us page
 // - locations.scss:    Sets the styles for the locations page
 // - contact.scss:      Sets the styles for the contact page
@@ -19,3 +19,4 @@
 // =============================================================================
 
 @forward 'home';
+@forward 'web-design';
