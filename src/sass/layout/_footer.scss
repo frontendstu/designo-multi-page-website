@@ -31,4 +31,26 @@
     z-index: -1;
     background-color: var(--footer-bg);
     text-align: var(--footer-text-align);
+
+    /**
+     * -------------------------------------------------------------------------
+     * FOOTER INNER
+     * -------------------------------------------------------------------------
+     *
+     * The footer inner works as a container that is specific to the footer. It
+     * apples the same max-width custom property value as the `.container`.
+     * Flexbox is applied to the footer inner to control the seperation of
+     * footer items
+     *
+     * ====================================================================== */
+
+    &-inner {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--footer-inner-row-gap)
+        );
+
+        max-width: var(--container-max-w);
+        margin-inline: auto;
+    }
 }
