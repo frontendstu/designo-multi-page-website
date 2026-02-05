@@ -40,7 +40,9 @@
 
     @include mixin.flex($direction: column, $row-gap: var(--cta-row-gap));
 
+    position: relative;
     padding: var(--cta-p);
+    z-index: 2;
     border-radius: var(--cta-radius);
     color: var(--cta-clr);
     text-align: var(--cta-text-align);
