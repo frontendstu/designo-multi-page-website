@@ -1,0 +1,21 @@
+/* =============================================================================
+ *
+ * PORTFOLIO
+ *
+ * Version: 1.0.0 (06/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The Portfolio prtial defines the styles specific to portfolio pages. This
+ * project features three portfolio archive pages (web design, app design and
+ * graphic design). Each page features a grid layout with a each portfolio item
+ * being a card with a screenshot of the works along with the name and short
+ * description of the project.
+ *
+ * Styles defined here are context-specific to Portfolio pages and should not
+ * contain any global component styles.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
