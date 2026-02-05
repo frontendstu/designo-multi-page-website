@@ -116,6 +116,7 @@
             $row-gap: var(--footer-nav-row-gap)
         );
 
+        margin-top: var(--footer-nav-mt);
         color: var(--footer-nav-clr);
         font-size: var(--footer-nav-fs);
         text-transform: var(--footer-nav-case);
