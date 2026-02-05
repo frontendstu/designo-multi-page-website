@@ -45,3 +45,23 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * 3 COLUMN ON MEDIUM
+ * -----------------------------------------------------------------------------
+ *
+ * The `.col-3-md` utility class is a grid utility class that begins as a
+ * single column layout, but once the viewport is 768px or higher it will
+ * change to a three column layout.
+ *
+ * ========================================================================== */
+
+.col-3-md {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @media(min-width: 48em) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
