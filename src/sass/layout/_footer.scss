@@ -142,4 +142,21 @@
             }
         }
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * FOOTER ATTRIBUTION
+     * -------------------------------------------------------------------------
+     *
+     * The footer attribution is the section of the site that displays site
+     * developer information, copyright details and any links relating to
+     * privacy policies and company T&C's
+     *
+     * ====================================================================== */
+
+    .attribution {
+        margin-top: var(--footer-attribution-mt);
+        opacity: var(--footer-attribution-opacity);
+        font-size: var(--footer-attribution-fs);
+    }
 }
