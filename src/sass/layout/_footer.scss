@@ -133,12 +133,18 @@
             $col-gap: var(--footer-socials-col-gap)
         );
 
-        svg {
-            fill: var(--footer-socials-icn-fill);
-            transition: var(--footer-socials-icn-transition);
+        a {
+            svg {
+                fill: var(--footer-socials-icn-fill);
+                transition: var(--footer-socials-icn-transition);
+
+                @include mixin.state-selector($focus-within: true) {
+                    fill: var(--footer-socials-icn-fill-active);
+                }
+            }
 
             @include mixin.state-selector {
-                fill: var(--footer-socials-icn-fill-active);
+                border-bottom: none;
             }
         }
     }
