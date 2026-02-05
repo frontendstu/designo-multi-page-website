@@ -53,4 +53,30 @@
         max-width: var(--container-max-w);
         margin-inline: auto;
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * FOOTER BRANDING
+     * -------------------------------------------------------------------------
+     *
+     * The footer branding styles define the appearance of the site branding
+     * that is displayed in the footer. The site's branding is only displyed in
+     * two places. That being in the header and the footer.
+     *
+     * The footer branding does differ from the header branding as a border
+     * bottom is applied to the footer branding section to break up the
+     * branding from the contact details.
+     *
+     * ====================================================================== */
+
+    &-branding {
+        img {
+            @include mixin.size($width: var(--footer-branding-img-w));
+
+            margin-inline: auto;
+        }
+
+        padding-bottom: var(--footer-branding-pb);
+        border-bottom: var(--footer-branding-border-b);
+    }
 }
