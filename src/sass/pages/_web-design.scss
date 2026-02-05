@@ -14,3 +14,13 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.hero {
+    &-web-design {
+        @include mixin.background(
+            $img: '/src/assets/images/web-design/desktop/bg-pattern-intro-web.svg',
+            $size: var(--web-design-hero-bg-size),
+            $position: var(--web-design-hero-bg-pos)
+        );
+    }
+}

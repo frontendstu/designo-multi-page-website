@@ -253,6 +253,12 @@
     --features-item-heading-case: uppercase;
     --features-item-heading-tracking: 5px;
 
+    /* ----- Web Design */
+
+    /** Hero */
+    --web-design-hero-bg-size: 54.75rem 36.5rem;
+    --web-design-hero-bg-pos: top right;
+
     /* ---------- MEDIA QUERIES */
 
     /* 768px */
@@ -307,6 +313,9 @@
         --features-pb: 4.1875rem;
         --features-text-align: left;
         --features-item-heading-my: 0 1rem;
+
+        /* Web Design */
+        --web-design-bg-pos: center left;
     }
 
     /* 1024px */
@@ -355,6 +364,9 @@
         --features-col-gap: 1.75rem;
         --features-pb: 10rem;
         --features-item-heading-my: 3rem;
+
+        /* Web Design */
+        --web-design-bg-pos: center right;
     }
 
     /* 1440px */
