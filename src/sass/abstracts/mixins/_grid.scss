@@ -1,0 +1,73 @@
+// =============================================================================
+//
+// GRID
+//
+// Version: 1.0.0 (06/02/2026)
+// Author: Stu Cowley
+//
+// -----------------------------------------------------------------------------
+//
+// Provides a shorthand utility for establishing CSS grid layouts in a concise
+// and predictable manner. This mixin abstracts common grid configurations such
+// as column count, row behaviour, spacing, and alignment into a reusable API
+// that can be applied across components and utilities without duplicating
+// structual CSS.
+//
+// The grid mixin is intentionally layout-focused and should not contain visual
+// or thematic styling. Spacing a sizing values are typically driven by CSS
+// custom properties or design tokens to maintain consistency throughout the
+// design system.
+//
+// -----------------------------------------------------------------------------
+//
+// Parameters:
+//
+// @param {String | Null} $cols     -   `grid-template-columns` value
+// @param {String | Null} $rows     -   `grid-template-rows` value
+// @param {Length | Null} $col-gap  -   Column gap
+// @param {Length | Null} $row-gap  -   Row gap
+// @param {String | Null} $justify  -   `justify-items` value
+// @param {String | Null} $align    -   `align-items` value
+// @param {String | Null} $areas    -   `grid-template-areas` value
+//
+// =============================================================================
+
+@mixin grid(
+    $cols: null,
+    $rows: null,
+    $col-gap: null,
+    $row-gap: null,
+    $justify: null,
+    $align: null,
+    $areas: null
+) {
+    display: grid;
+
+    @if $cols != null {
+        grid-template-columns: $cols;
+    }
+
+    @if $rows != null {
+        grid-template-rows: $rows
+    }
+
+    @if $areas != null {
+        grid-template-areas: $areas;
+    }
+
+    @if $col-gap != null {
+        column-gap: $col-gap;
+    }
+
+    @if $row-gap != null {
+        row-gap: $row-gap;
+    }
+
+    @if $justify != null {
+        justify-items: $justify;
+    }
+
+    @if $align != null {
+        align-items: $align;
+    }
+}
