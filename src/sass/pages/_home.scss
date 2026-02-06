@@ -51,9 +51,11 @@
  * ========================================================================== */
 
 .portfolio-nav {
-    display: grid;
-    row-gap: var(--portfolio-nav-row-gap);
-    column-gap: var(--portfolio-nav-col-gap);
+    @include mixin.grid(
+        $col-gap: var(--portfolio-nav-col-gap),
+        $row-gap: var(--portfolio-nav-row-gap)
+    );
+
     padding-block: var(--portfolio-nav-py);
 
     &-item {
@@ -158,10 +160,12 @@
  * ========================================================================== */
 
 .features {
-    display: grid;
-    grid-template-rows: 1fr;
-    row-gap: var(--features-row-gap);
-    column-gap: var(--features-col-gap);
+    @include mixin.grid(
+        $rows: 1fr,
+        $row-gap: var(--features-row-gap),
+        $col-gap: var(--features-col-gap)
+    );
+
     padding-bottom: var(--features-pb);
     text-align: var(--features-text-align);
 
@@ -205,10 +209,10 @@
 
     .features {
         &-item {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            justify-content: center;
+            @include mixin.grid(
+                $cols: repeat(2, minmax(0, 1fr)),
+                $align: center,
+            );
         }
     }
 }
@@ -220,7 +224,7 @@
      * ---------------------------------------------------------------------- */
 
     .portfolio-nav {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
         &-item {
             &:first-child {
@@ -234,7 +238,7 @@
      * ---------------------------------------------------------------------- */
 
     .features {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
 
         &-item {
             display: unset;
