@@ -19,3 +19,12 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.portfolio {
+    @include mixin.grid(
+        $cols: repeat(1, minmax(0, 1fr)),
+        $row-gap: var(--portfolio-row-gap)
+    );
+
+    padding-block: var(--portfolio-py);
+}
