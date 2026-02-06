@@ -68,7 +68,7 @@
 
             a {
                 @include mixin.state-selector {
-                    border-bottom-color: var(--portfolio-item-link-border-b-clr-active);
+                    border-bottom: none;
                 }
             }
         }
