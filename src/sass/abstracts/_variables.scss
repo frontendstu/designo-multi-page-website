@@ -256,6 +256,7 @@
     /* ----- Portfolio */
     --portfolio-py: 6rem;
     --portfolio-row-gap: 2.5rem;
+    --portfolio-col-gap: 0;
 
     --portfolio-item-radius: 15px;
 
@@ -384,6 +385,10 @@
 
         /* Web Design */
         --web-design-bg-pos: center right;
+
+        /* Portfolio */
+        --portfolio-row-gap: 1.875rem;
+        --portfolio-col-gap: var(--portfolio-row-gap);
     }
 
     /* 1440px */

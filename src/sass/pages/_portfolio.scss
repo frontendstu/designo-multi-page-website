@@ -23,7 +23,8 @@
 .portfolio {
     @include mixin.grid(
         $cols: repeat(1, minmax(0, 1fr)),
-        $row-gap: var(--portfolio-row-gap)
+        $row-gap: var(--portfolio-row-gap),
+        $col-gap: var(--portfolio-col-gap)
     );
 
     padding-block: var(--portfolio-py);
@@ -71,5 +72,42 @@
                 }
             }
         }
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the responsive styles for 768px and 1280px. The responsive styles
+ * here are used for structural changes as the layout is single column on the
+ * base breakpoint, then it turns into a two column layout on viewports 768px+
+ * and then the layout turns into three column on 1280px+.
+ *
+ * ========================================================================== */
+
+/* ----- 768px */
+@media(min-width: 48em) and (max-width: 79.98em) {
+    .portfolio {
+        &-item {
+            @include mixin.flex;
+
+            &-img {
+                max-width: 50%;
+            }
+
+            &-content {
+                max-width: 50%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/* ----- 1280px */
+@media(min-width: 80em) {
+    .portfolio {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
