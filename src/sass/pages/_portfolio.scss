@@ -27,4 +27,49 @@
     );
 
     padding-block: var(--portfolio-py);
+
+    /**
+     * -------------------------------------------------------------------------
+     * PORTFOLIO ITEM + CONTENT
+     * -------------------------------------------------------------------------
+     *
+     * Defines the card layout for a portfolio entry, pairing a project preview
+     * with a descriptive content block. The container establishes the card
+     * boundary with rounded corners and clipped overflow, while the content
+     * section controls padding, spacing and centered alignment for consistent
+     * appearance.
+     *
+     * The portfolio item is portfolio-specific and should not be used as a
+     * global card primitive.
+     *
+     * ====================================================================== */
+
+    &-item {
+        border-radius: var(--portfolio-item-radius);
+        overflow: hidden;
+
+        &-content {
+            @include mixin.flex(
+                $direction: column,
+                $row-gap: var(--portfolio-item-content-row-gap)
+            );
+
+            padding: var(--portfolio-item-content-p);
+            background-color: var(--portfolio-item-content-bg);
+            text-align: var(--portfolio-item-content-text-align);
+
+            h3 {
+                color: var(--portfolio-item-heading-clr);
+                font-size: var(--portfolio-item-heading-fs);
+                letter-spacing: var(--portfolio-item-heading-tracking);
+                text-transform: var(--portfolio-item-heading-case);
+            }
+
+            a {
+                @include mixin.state-selector {
+                    border-bottom-color: var(--portfolio-item-link-border-b-clr-active);
+                }
+            }
+        }
+    }
 }
