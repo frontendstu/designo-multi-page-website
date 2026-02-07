@@ -10,17 +10,19 @@
 // This file is used to import the following partials using the `@forward`
 // module directive for page specific styles:
 //
-// - home.scss:         Sets the styles for the homepage
-// - web-design.scss    Sets the styles for the web design page
-// - app-design.scss    Sets the styles for the app design page
-// - portfolio.scss     Sets the styles for portfolio pages
-// - about.scss:        Sets the styles for the about us page
-// - locations.scss:    Sets the styles for the locations page
-// - contact.scss:      Sets the styles for the contact page
+// - home.scss:             Sets the styles for the homepage
+// - web-design.scss        Sets the styles for the web design page
+// - app-design.scss        Sets the styles for the app design page
+// - graphic-design.scss    Sets the styles for the graphic desigh page
+// - portfolio.scss         Sets the styles for portfolio pages
+// - about.scss:            Sets the styles for the about us page
+// - locations.scss:        Sets the styles for the locations page
+// - contact.scss:          Sets the styles for the contact page
 //
 // =============================================================================
 
 @forward 'home';
 @forward 'web-design';
 @forward 'app-design';
+@forward 'graphic-design';
 @forward 'portfolio';
