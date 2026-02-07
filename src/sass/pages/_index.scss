@@ -12,6 +12,7 @@
 //
 // - home.scss:         Sets the styles for the homepage
 // - web-design.scss    Sets the styles for the web design page
+// - app-design.scss    Sets the styles for the app design page
 // - portfolio.scss     Sets the styles for portfolio pages
 // - about.scss:        Sets the styles for the about us page
 // - locations.scss:    Sets the styles for the locations page
@@ -21,4 +22,5 @@
 
 @forward 'home';
 @forward 'web-design';
+@forward 'app-design';
 @forward 'portfolio';
