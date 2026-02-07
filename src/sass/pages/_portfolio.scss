@@ -111,6 +111,10 @@
         &-item {
             @include mixin.flex;
 
+            a {
+                display: inherit;
+            }
+
             &-img {
                 max-width: 50%;
             }
