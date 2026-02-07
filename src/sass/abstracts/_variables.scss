@@ -258,11 +258,14 @@
     --portfolio-row-gap: 2.5rem;
     --portfolio-col-gap: 0;
 
+    --portfolio-item-transition: background-color 250ms linear;
     --portfolio-item-radius: 15px;
 
     --portfolio-item-content-row-gap: 1rem;
     --portfolio-item-content-p: 2rem 1.875rem;
     --portfolio-item-content-bg: hsl(14 76% 97%);
+    --portfolio-item-content-bg-active: var(--clr-branding);
+    --portfolio-item-content-clr-active: var(--clr-neutral-100);
     --portfolio-item-content-text-align: center;
 
     --portfolio-item-heading-clr: var(--clr-branding);

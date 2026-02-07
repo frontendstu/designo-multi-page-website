@@ -49,6 +49,24 @@
         border-radius: var(--portfolio-item-radius);
         overflow: hidden;
 
+        a {
+            display: block;
+            height: 100%;
+            border-bottom: none;
+
+            @include mixin.state-selector {
+                .portfolio-item-content {
+                    transition: var(--portfolio-item-transition);
+                    background-color: var(--portfolio-item-content-bg-active);
+                    color: var(--portfolio-item-content-clr-active);
+
+                    h3 {
+                        color: var(--portfolio-item-content-clr-active);
+                    }
+                }
+            }
+        }
+
         &-content {
             @include mixin.flex(
                 $direction: column,
