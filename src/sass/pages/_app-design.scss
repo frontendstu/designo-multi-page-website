@@ -14,3 +14,13 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+.hero {
+    &-app-design {
+        @include mixin.background(
+            $img: '/src/assets/images/app-design/desktop/bg-pattern-intro-app.svg',
+            $size: var(--app-design-hero-bg-size),
+            $position: var(--app-design-hero-bg-pos)
+        );
+    }
+}
