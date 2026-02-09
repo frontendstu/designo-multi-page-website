@@ -341,6 +341,9 @@
         --cta-heading-max-w: 16.375rem;
         --cta-heading-fs: var(--fs-800);
 
+        /* Portfolio */
+        --portfolio-py: 7.5rem;
+
         /* Portfolio Nav */
         --portfolio-nav-page-py: 0 7.5rem;
 
@@ -406,6 +409,7 @@
         --web-design-bg-pos: center right;
 
         /* Portfolio */
+        --portfolio-py: 10rem;
         --portfolio-row-gap: 1.875rem;
         --portfolio-col-gap: var(--portfolio-row-gap);
     }
