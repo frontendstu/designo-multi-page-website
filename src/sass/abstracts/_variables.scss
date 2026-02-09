@@ -220,6 +220,8 @@
     --portfolio-nav-col-gap: 0;
     --portfolio-nav-py: 7.5rem;
 
+    --portfolio-nav-page-py: 0 6rem;
+
     --portfolio-nav-item-radius: 15px;
     --portfolio-nav-item-clr: var(--clr-neutral-100);
     --portfolio-nav-item-fs: var(--fs-200);
@@ -339,6 +341,9 @@
         --cta-heading-max-w: 16.375rem;
         --cta-heading-fs: var(--fs-800);
 
+        /* Portfolio Nav */
+        --portfolio-nav-page-py: 0 7.5rem;
+
         /* Features */
         --features-pb: 4.1875rem;
         --features-text-align: left;
@@ -388,6 +393,8 @@
         /* Portfolio Nav */
         --portfolio-nav-row-gap: 1.5rem;
         --portfolio-nav-col-gap: 1.875rem;
+
+        --portfolio-nav-page-py: 0 10rem;
 
         /* Features */
         --features-text-align: center;

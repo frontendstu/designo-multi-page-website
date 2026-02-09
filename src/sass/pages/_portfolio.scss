@@ -198,6 +198,21 @@
             display: block;
         }
     }
+
+    /**
+     * -------------------------------------------------------------------------
+     * PORTFOLIO NAV PAGE
+     * -------------------------------------------------------------------------
+     *
+     * These styles are specific to the navigation of portfolio pages on single
+     * portfolio pages. The styles of the portfolio page navigation share the
+     * same styles as the portfolio navigation.
+     *
+     * ====================================================================== */
+
+    &-page {
+        padding-block: var(--portfolio-nav-page-py);
+    }
 }
 
 /**
