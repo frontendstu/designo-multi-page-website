@@ -127,6 +127,10 @@
 
     padding-block: var(--portfolio-nav-py);
 
+    a {
+        display: block;
+    }
+
     &-item {
         position: relative;
         display: block;
@@ -160,7 +164,7 @@
                 letter-spacing: var(--portfolio-nav-item-heading-tracking);
             }
 
-            a {
+            span {
                 position: relative;
                 margin-top: var(--portfolio-nav-item-link-mt);
                 font-size: var(--portfolio-nav-item-link-fs);
