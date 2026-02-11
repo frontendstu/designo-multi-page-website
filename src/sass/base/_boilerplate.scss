@@ -116,3 +116,20 @@ ul,
 ol {
     list-style: none;
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * PICTURE RENDERING FIX
+ * -----------------------------------------------------------------------------
+ *
+ * Prevent the picture element from not fully covering its parent. This fix
+ * gives the `<picture>` and `<img>` elements a 100% width and height and uses
+ * `object-fit: cover` to render the image to fill its parent.
+ *
+ * ========================================================================== */
+
+picture img {
+    @include mixin.size($width: 100%, $height: 100%);
+
+    object-fit: cover;
+}
