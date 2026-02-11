@@ -1,0 +1,22 @@
+/* =============================================================================
+ * ABOUT
+ * =============================================================================
+ *
+ * Version: 1.0.0 (12/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The About partial defines the styles specific to the About page.
+ *
+ * This includes page-level layout, section spacing and About page specific
+ * components such as the `.about-card` and supporting content blocks. These
+ * styles are tightly coupled to the About page structure and are not for reuse
+ * across other areas of the site.
+ *
+ * Reusable patterns should be abstracted into the components directory where
+ * appropriate. Page-specific implementations should remain scoped here.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
