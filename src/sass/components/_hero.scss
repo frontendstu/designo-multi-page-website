@@ -113,6 +113,38 @@
         }
     }
 
+    /**
+     * -------------------------------------------------------------------------
+     * HERO ABOUT
+     * -------------------------------------------------------------------------
+     *
+     * Defines the about page variant of the global Hero component.
+     *
+     * This variant applies a image above the hero content along with a
+     * patterned background on the hero inner. It features a vertically stacked
+     * layout by default and then displays as a horizontally aligned layout
+     * with the hero image on the right and the hero content on the left at the
+     * highest breakpoint. Each breakpoint sees a different image loaded.
+     *
+     * ====================================================================== */
+
+    &-about {
+        @include mixin.background(
+            $img: '/src/assets/images/about/mobile/bg-pattern-hero-about-mobile.svg',
+            $size: var(--hero-about-bg-size),
+            $position: var(--hero-about-bg-pos)
+        );
+
+        position: relative;
+        padding-top: 0;
+        overflow: hidden;
+        text-align: var(--hero-about-text-align);
+
+        .hero-inner {
+            padding-top: var(--hero-about-inner-pt);
+            text-align: var(--hero-about-text-align);
+        }
+    }
 }
 
 /**
@@ -152,6 +184,14 @@
             }
 
         }
+
+        &-about {
+            background-image: url('/src/assets/images/about/desktop/bg-pattern-hero-about-desktop.svg');
+
+            .hero-inner {
+                max-width: var(--hero-about-inner-max-w);
+            }
+        }
     }
 }
 
@@ -160,6 +200,22 @@
     .hero {
         &-home {
             @include mixin.flex($justify: center, $align-items: center);
+        }
+    }
+}
+
+/* ----- 1280px */
+@media(min-width: 80em) {
+    .hero {
+        &-about {
+            @include mixin.flex($align-items: center, $direction: row-reverse);
+
+            padding-bottom: 0;
+
+            .hero-inner {
+                margin-inline: auto;
+                padding-top: 0;
+            }
         }
     }
 }

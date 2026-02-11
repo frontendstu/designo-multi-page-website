@@ -195,6 +195,11 @@
     --hero-home-img-h: 24rem;
     --hero-home-img-mt: 2.5rem;
 
+    --hero-about-bg-size: 54.75rem 59.125rem;
+    --hero-about-bg-pos: -31rem 11.5rem;
+    --hero-about-text-align: center;
+    --hero-about-inner-pt: 5rem;
+
     /* ----- Call To Action */
     --cta-row-gap: 2rem;
     --cta-p: 4rem 1.5rem;
@@ -335,6 +340,12 @@
         --hero-home-inner-heading-leading: 1;
         --hero-home-content-max-w: 26rem;
 
+        /* Hero About */
+        --hero-about-bg-pos: -5rem -8rem;
+        --hero-about-bg-size: 40rem;
+        --hero-about-inner-max-w: 35.8125rem;
+        --hero-about-inner-pt: 4rem;
+
         /* Call to Action */
         --cta-content-max-w: 26.8125rem;
 
@@ -371,6 +382,9 @@
         --hero-home-bg-pos: top right;
         --hero-home-img-h: 30rem;
 
+        --hero-about-bg-pos: -3rem -2rem;
+        --hero-about-inner-max-w: 40rem;
+
         /* Call to Action */
         --cta-p: 4rem;
         --cta-text-align: left;
@@ -392,6 +406,11 @@
         --cta-heading-max-w: 16.75rem;
 
         --cta-content-max-w: 26.9375rem;
+
+        /* Hero */
+        --hero-about-bg-pos: left bottom;
+        --hero-about-text-align: left;
+        --hero-about-inner-max-w: 28.625rem;
 
         /* Portfolio Nav */
         --portfolio-nav-row-gap: 1.5rem;
