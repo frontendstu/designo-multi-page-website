@@ -21,6 +21,10 @@
 
 @use '../abstracts/mixins' as mixin;
 
+.about {
+    padding-block: var(--about-py);
+}
+
 /**
  * -----------------------------------------------------------------------------
  * ABOUT CARD
