@@ -16,9 +16,11 @@
 // - hero.scss:     Contains hero styles
 // - cta.scss:      Contains call to action styles
 // - cards.scss:    Contains portfolio item card styles
+// - locations.scss:Contains location item styles
 //
 // =============================================================================
 
 @forward 'buttons';
 @forward 'hero';
 @forward 'cta';
+@forward 'locations'

@@ -1,0 +1,24 @@
+/* =============================================================================
+ *
+ * LOCATIONS
+ *
+ * Version: 1.0.0 (12/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the Locations component used to highlight regional office locations.
+ *
+ * Each location item pairs a decorative landmark illustration and background
+ * pattern (circle) and a call-to-action button linking to the Locations page.
+ *
+ * The layout follows a mobile-first approach:
+ * - Single-column stack on base and tablet (768px) viewports
+ * - Changes to a three-column grid at desktop (1280px) viewport
+ *
+ * Spacing, typography and layout behaviour are controlled via design tokens
+ * and utility mixins to ensure consistency across breakpoints.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
