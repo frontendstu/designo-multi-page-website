@@ -296,6 +296,24 @@
     --graphic-design-hero-bg-size: 54.75rem 36.5rem;
     --graphic-design-hero-bg-pos: center left;
 
+    /* ----- About */
+
+    /* About Card */
+    --about-card-max-w: 100%;
+    --about-card-bg: hsl(14 76% 97%);
+    --about-card-bg-size: cover,
+    --about-card-bg-pos: center;
+    --about-card-radius: 0;
+    --about-card-fs: var(--fs-200);
+    --about-card-text-align: center;
+
+    --about-card-content-row-gap: 1.5rem;
+    --about-card-content-max-w: 20.4375rem;
+    --about-card-content-py: 5rem;
+
+    --about-card-heading-clr: var(--clr-branding);
+    --about-card-heading-fs: var(--fs-700);
+
     /* ---------- MEDIA QUERIES */
 
     /* 768px */
@@ -365,6 +383,16 @@
 
         /* Web Design */
         --web-design-bg-pos: center left;
+
+        /* About */
+        --about-card-max-w: var(--container-max-w);
+        --about-card-radius: 15px;
+        --about-card-fs: var(--fs-300);
+
+        --about-card-content-max-w: 35.75rem;
+        --about-card-content-py: 4.25rem;
+
+        --about-card-heading-fs: var(--fs-800);
     }
 
     /* 1024px */
@@ -390,6 +418,9 @@
         --cta-text-align: left;
 
         --cta-content-max-w: 28.6875rem;
+
+        /* About */
+        --about-card-content-max-w: 40rem;
     }
 
     /* 1280px */
@@ -431,6 +462,12 @@
         --portfolio-py: 10rem;
         --portfolio-row-gap: 1.875rem;
         --portfolio-col-gap: var(--portfolio-row-gap);
+
+        /* About */
+        --about-card-text-align: left;
+        --about-card-bg-pos: bottom right;
+        --about-card-content-max-w: 27.8125rem;
+        --about-card-content-py: 0;
     }
 
     /* 1440px */

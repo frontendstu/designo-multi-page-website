@@ -20,3 +20,87 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * -----------------------------------------------------------------------------
+ * ABOUT CARD
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the layout and presentation of the About page card component. Each
+ * card pairs a featured image with a descriptive content block and is
+ * structured to stack vertically on smaller viewports before switching to a
+ * horizontal layout at larger breakpoints.
+ *
+ * The about card is page-specific and should remain scoped to the About
+ * partial. It is not intended to function as a reusable global card pattern.
+ *
+ * Layout, spacing, and typography are controlled via design tokens and utility
+ * mixins to maintain consistency with the wider design system.
+ *
+ * ========================================================================== */
+
+.about-card {
+    @include mixin.background(
+        $img: '/src/assets/images/shared/desktop/bg-pattern-three-circles.svg',
+        $size: var(--about-card-bg-size),
+        $position: var(--about-card-bg-pos)
+    );
+
+    max-width: var(--about-card-max-w);
+    margin-inline: auto;
+    border-radius: var(--about-card-radius);
+    background-color: var(--about-card-bg);
+    font-size: var(--about-card-fs);
+    text-align: var(--about-card-text-align);
+
+    &-content {
+        @include mixin.flex(
+            $direction: column,
+            $row-gap: var(--about-card-content-row-gap)
+        );
+
+        max-width: var(--about-card-content-max-w);
+        padding-block: var(--about-card-content-py);
+        margin-inline: auto;
+
+        h3 {
+            color: var(--about-card-heading-clr);
+            font-size: var(--about-card-heading-fs);
+        }
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * Contains the responsive styles for the About page.
+ *
+ * These media queries enhance the layout from a stacked, mobile-first
+ * structure to a wider tablet and desktop layout. This primarily affects the
+ * about card layout, spacing, alignment and content width to ensure optimal
+ * readability and visual balance across viewports.
+ *
+ * All responsive behaviour defined here is scoped to the About page and should
+ * not contain or introduce global layout changes.
+ *
+ * ========================================================================== */
+
+/* ----- 768px */
+@media(min-width: 48em) {
+    .about-card {
+        overflow: hidden;
+    }
+}
+
+/* ----- 1280px */
+@media(min-width: 80em) {
+    .about-card {
+        @include mixin.flex($align-items: center);
+
+        &-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
