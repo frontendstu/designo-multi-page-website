@@ -23,6 +23,10 @@
 
 .about {
     padding-block: var(--about-py);
+
+    .locations {
+        margin-block: var(--about-locations-my);
+    }
 }
 
 /**

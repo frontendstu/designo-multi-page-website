@@ -325,6 +325,8 @@
     --about-card-heading-clr: var(--clr-branding);
     --about-card-heading-fs: var(--fs-700);
 
+    --about-locations-my: 7.5rem;
+
     /* ---------- MEDIA QUERIES */
 
     /* 768px */
@@ -488,6 +490,7 @@
         --about-card-bg-pos: bottom right;
         --about-card-content-max-w: 27.8125rem;
         --about-card-content-py: 0;
+        --about-locations-my: 7.5rem;
     }
 
     /* 1440px */
