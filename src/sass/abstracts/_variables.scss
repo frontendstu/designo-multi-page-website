@@ -216,6 +216,16 @@
     --cta-heading-max-w: 100%;
     --cta-heading-fs: var(--fs-700);
 
+    /* ----- Locations */
+    --locations-row-gap: 3rem;
+    --locations-col-gap: 0;
+
+    --locations-item-text-align: center;
+    --locations-item-heading-my: 3rem 2rem;
+    --locations-item-heading-fs: var(--fs-400);
+    --locations-item-heading-tracking: 5px;
+    --locations-item-heading-case: uppercase;
+
     /* ---------- PAGES */
 
     /* ----- Home */
@@ -371,6 +381,9 @@
         --cta-heading-max-w: 16.375rem;
         --cta-heading-fs: var(--fs-800);
 
+        /* Locations */
+        --locations-row-gap: 5rem;
+
         /* Portfolio */
         --portfolio-py: 7.5rem;
 
@@ -445,6 +458,9 @@
         --hero-about-bg-pos: left bottom;
         --hero-about-text-align: left;
         --hero-about-inner-max-w: 28.625rem;
+
+        /* Locations */
+        --locations-col-gap: 1.875rem;
 
         /* Portfolio Nav */
         --portfolio-nav-row-gap: 1.5rem;
