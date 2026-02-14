@@ -338,6 +338,8 @@
     --location-details-p: 5rem 1.5rem;
     --location-details-mt: 0;
     --location-details-bg: hsl(14 76% 97%);
+    --location-details-bg-size: 36.5rem 36.5rem;
+    --location-details-bg-pos: top left;
     --location-details-text-align: center;
     --location-details-heading-fs: var(--fs-700);
 
@@ -436,7 +438,10 @@
 
         --location-radius: 14px;
 
+        --location-details-p: 5.5rem 4.625rem;
         --location-details-mt: 1.9375rem;
+        --location-details-text-align: left;
+        --location-details-address-col-gap: 9rem;
     }
 
     /* 1024px */

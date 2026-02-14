@@ -67,8 +67,8 @@
     &-details {
         @include mixin.background(
             $img: 'src/assets/images/shared/desktop/bg-pattern-three-circles.svg',
-            $size: 36.5rem 36.5rem,
-            $position: top left
+            $size: var(--location-details-bg-size),
+            $position: var(--location-details-bg-pos)
         );
 
         padding: var(--location-details-p);
@@ -90,6 +90,33 @@
             );
 
             margin-top: var(--location-details-address-mt);
+        }
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * MEDIA QUERIES
+ * -----------------------------------------------------------------------------
+ *
+ * Sets the responsive styles for the Locations page.
+ *
+ * These media queries enhance the layout of location items.
+ *
+ * All responsive behaviour defined here is scoped to the Locations page and
+ * should not contain or introduce global layout changes.
+ *
+ * ========================================================================== */
+
+/* ----- 768px */
+@media(min-width: 48em) {
+    .location {
+        &-details {
+            background-position: bottom;
+
+            address {
+                @include mixin.flex($direction: row);
+            }
         }
     }
 }
