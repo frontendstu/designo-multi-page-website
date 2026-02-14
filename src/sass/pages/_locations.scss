@@ -1,0 +1,18 @@
+/* =============================================================================
+ *
+ * LOCATIONS
+ *
+ * Version: 1.0.0 (14/02/2026)
+ * Author: Stu Cowley
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * The locations partial defines the styles specific to the Locations page.
+ *
+ * It defines page-level spacing, section rhythm, and the Locations grid on
+ * larger viewports. These styles are tightly coupled to the structure of the
+ * Locations page and are not intended for reuse elsewhere in the project.
+ *
+ * ========================================================================== */
+
+@use '../abstracts/mixins' as mixin;
