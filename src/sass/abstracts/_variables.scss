@@ -331,6 +331,17 @@
     --locations-page-max-w: 100%;
     --locations-page-py: 0 7.5rem;
 
+    --location-radius: 0;
+
+    --location-details-p: 5rem 1.5rem;
+    --location-details-bg: hsl(14 76% 97%);
+    --location-details-text-align: center;
+    --location-details-heading-fs: var(--fs-700);
+
+    --location-details-address-row-gap: 1.5rem;
+    --location-details-address-col-gap: 0;
+    --location-details-address-mt: 1.5rem;
+
     /* ---------- MEDIA QUERIES */
 
     /* 768px */
@@ -419,6 +430,8 @@
         /* Locations Page */
         --locations-page-max-w: var(--container-max-w);
         --locations-page-py: 1.875rem 7.5rem;
+
+        --location-radius: 14px;
     }
 
     /* 1024px */

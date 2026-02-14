@@ -36,3 +36,52 @@
     margin-inline: auto;
     padding-block: var(--locations-page-py);
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * LOCATION
+ * -----------------------------------------------------------------------------
+ *
+ * Defines the styles for a single location item.
+ *
+ * A border radius is applied to both the `.location-map` and `.
+ * location-details` along with a background colour on the location details
+ * panel.
+ *
+ * ========================================================================== */
+
+.location {
+    &-map {
+        img {
+            border-radius: var(--location-radius);
+            overflow: hidden;
+        }
+    }
+
+    &-details {
+        @include mixin.background(
+            $img: 'src/assets/images/shared/desktop/bg-pattern-three-circles.svg',
+            $size: 36.5rem 36.5rem,
+            $position: top left
+        );
+
+        padding: var(--location-details-p);
+        background-color: var(--location-details-bg);
+        text-align: var(--location-details-text-align);
+
+        h3 {
+            color: var(--clr-branding);
+            font-size: var(--location-details-heading-fs);
+        }
+
+        address {
+            @include mixin.flex(
+                $direction: column,
+                $row-gap: var(--location-details-address-row-gap),
+                $col-gap: var(--location-details-address-col-gap)
+            );
+
+            margin-top: var(--location-details-address-mt);
+        }
+    }
+}
