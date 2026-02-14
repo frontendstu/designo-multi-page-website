@@ -120,3 +120,29 @@
         }
     }
 }
+
+/* ----- 1024px */
+@media(min-width: 64em) {
+    .location {
+        @include mixin.grid(
+            $cols: 1fr 2fr,
+            $col-gap: var(--location-col-gap)
+        );
+
+        align-items: stretch;
+
+        &:nth-child(even) {
+            direction: rtl;
+
+            address {
+                margin-right: auto;
+            }
+        }
+
+        &-details {
+            @include mixin.flex($justify: center);
+
+            flex-direction: column;
+        }
+    }
+}

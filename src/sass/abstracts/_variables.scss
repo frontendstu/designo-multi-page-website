@@ -470,6 +470,12 @@
 
         /* About */
         --about-card-content-max-w: 40rem;
+
+        /* Location Details */
+        --location-col-gap: 1.875rem;
+
+        --location-details-p: 0 2.625rem;
+        --location-details-mt: 0;
     }
 
     /* 1280px */
@@ -525,6 +531,7 @@
 
         /* Locations Pages */
         --locations-page-py: 1.875rem 10rem;
+        --location-details-p: 0 5.9375rem;
     }
 
     /* 1440px */
