@@ -16,3 +16,23 @@
  * ========================================================================== */
 
 @use '../abstracts/mixins' as mixin;
+
+/**
+ * -----------------------------------------------------------------------------
+ * LOCATIONS PAGE
+ * -----------------------------------------------------------------------------
+ *
+ * The locations page defines the global locations page styles. These styles
+ * apply the max-width of content along with the block padding and centralising
+ * inline margin to keep content centered to the page.
+ *
+ * The class name `.locations-page` has been given as not to cause any
+ * conflicting styles with the `.locations` component.
+ *
+ * ========================================================================== */
+
+.locations-page {
+    max-width: var(--locations-page-max-w);
+    margin-inline: auto;
+    padding-block: var(--locations-page-py);
+}

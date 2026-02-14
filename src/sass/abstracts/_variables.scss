@@ -327,6 +327,10 @@
 
     --about-locations-my: 7.5rem;
 
+    /* ----- Locations Page */
+    --locations-page-max-w: 100%;
+    --locations-page-py: 0 7.5rem;
+
     /* ---------- MEDIA QUERIES */
 
     /* 768px */
@@ -411,6 +415,10 @@
         --about-card-content-py: 4.25rem;
 
         --about-card-heading-fs: var(--fs-800);
+
+        /* Locations Page */
+        --locations-page-max-w: var(--container-max-w);
+        --locations-page-py: 1.875rem 7.5rem;
     }
 
     /* 1024px */
@@ -491,6 +499,9 @@
         --about-card-content-max-w: 27.8125rem;
         --about-card-content-py: 0;
         --about-locations-my: 7.5rem;
+
+        /* Locations Pages */
+        --locations-page-py: 1.875rem 10rem;
     }
 
     /* 1440px */
