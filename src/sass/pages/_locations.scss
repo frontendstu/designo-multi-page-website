@@ -32,6 +32,12 @@
  * ========================================================================== */
 
 .locations-page {
+    @include mixin.grid(
+        $cols: repeat(1, minmax(0, 1fr)),
+        $row-gap: var(--locations-page-row-gap),
+        $col-gap: var(--locations-page-col-gap)
+    );
+
     max-width: var(--locations-page-max-w);
     margin-inline: auto;
     padding-block: var(--locations-page-py);
