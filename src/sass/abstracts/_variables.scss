@@ -336,6 +336,7 @@
     --location-radius: 0;
 
     --location-details-p: 5rem 1.5rem;
+    --location-details-mt: 0;
     --location-details-bg: hsl(14 76% 97%);
     --location-details-text-align: center;
     --location-details-heading-fs: var(--fs-700);
@@ -434,6 +435,8 @@
         --locations-page-py: 1.875rem 7.5rem;
 
         --location-radius: 14px;
+
+        --location-details-mt: 1.9375rem;
     }
 
     /* 1024px */
