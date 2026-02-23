@@ -7,6 +7,45 @@
         <title>Contact | Designo Multi-Page Website</title>
     </head>
     <body>
+        <header class="header">
+            <div class="header-inner">
+                <a href="/" class="header-branding">
+                    <img
+                        src="src/assets/images/shared/desktop/logo-dark.png"
+                        alt="" />
+
+                    <span class="sr-only">Designo</span>
+                </a><!-- /header-branding -->
+
+                <button
+                    class="header-toggle"
+                    type="button"
+                    aria-controls="primary-nav"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <img
+                        src="src/assets/images/shared/mobile/icon-hamburger.svg"
+                        alt=""
+                        class="header-icon-hamburger" />
+
+                    <img
+                    src="src/assets/images/shared/mobile/icon-close.svg"
+                    alt=""
+                    class="header-icon-close" />
+                </button><!-- /header-toggle -->
+
+                <nav id="primary-nav" class="header-nav" data-visible="false">
+                    <ul class="header-menu">
+                        <li><a href="our-company.html">Our company</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul><!-- /header-menu -->
+                </nav><!-- /header-nav -->
+            </div><!-- /header-inner -->
+        </header><!-- /header -->
+
         <script type="module" src="/src/main.js"></script>
     </body>
 </html>
